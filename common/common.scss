@@ -23,7 +23,9 @@ summary,
 input,
 textbox,
 li,
-ul {
+ul,
+input,
+textarea {
     cursor: default !important;
 }
 .cooked img:not(.thumbnail):not(.emoji), .d-editor-preview img:not(.thumbnail):not(.emoji){
