@@ -382,7 +382,11 @@ input[type="color"],
 div.ac-wrap {
     border-radius: 8px !important;
 }
-
+.badge-card,
+.reviewable-filters,
+.user-card.show, .group-card.show {
+    border-radius:14px;
+}
 
 .list-controls .combo-box .combo-box-header {
     border: 0px;
@@ -391,6 +395,10 @@ div.ac-wrap {
 
 .d-header {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+}
+.d-header {
+    margin-top:5px;
+    border-radius:12px 12px 12px 12px
 }
 
 .d-header-icons .d-icon {
