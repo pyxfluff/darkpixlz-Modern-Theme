@@ -438,6 +438,39 @@ div.ac-wrap {
 .drop-down-mode .d-header-icons .active .icon:hover {
     border: 1px solid transparent;
 }
+.topic-chat-container .chat-live-pane,
+.chat-live-pane .chat-messages-scroll,
+.chat-composer-container,
+.chat-drawer,
+.topic-chat-drawer-header,
+.topic-chat-drawer-content,
+.topic-chat-container {
+    background-color: #24242412;
+    backdrop-filter: blur(2rem);
+}
+.chat-message {
+    background:0;
+}
+.chat-messages-container .chat-message.chat-message-bookmarked {
+    border-radius:8px
+}
+.user-card.show, .group-card.show, .user-card .card-content, .group-card .card-content {
+    border-radius:12px;
+    background-color: #24242436;
+    backdrop-filter:blur(2rem)
+        
+}
+.chat-composer-dropdown__list,
+[data-tippy-root],
+.tippy-box {
+    background-color:#24242412;
+    border-radius:8px;
+    backdrop-filter:blur(10rem)
+}
+.modal-backdrop.in {
+    background-color:#24242400;
+    backdrop-filter:blur(5rem)
+}
 
 .menu-panel .widget-link:hover,
 .menu-panel .widget-link:focus,
