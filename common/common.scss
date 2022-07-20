@@ -2,9 +2,8 @@
 
 
 body{
-    background-image:url("https://d3bpeqsaub0i6y.cloudfront.net/plugins/discourse-teams-sidebar/images/teams-pattern.gif")!important;
+    background-image:linear-gradient(0deg, rgba(var(--secondary-rgb), 1) 0%, rgba(var(--secondary-rgb), 0.75) 100%),url("https://d3bpeqsaub0i6y.cloudfront.net/plugins/discourse-teams-sidebar/images/teams-pattern.gif")
     background-size:350px;
-    linear-gradient(0deg, rgba(var(--secondary-rgb), 1) 0%, rgba(var(--secondary-rgb), 0.75) 100%),url("https://d3bpeqsaub0i6y.cloudfront.net/plugins/discourse-teams-sidebar/images/teams-pattern.gif")
 }
 /* Make cursor stay normal*/
 body,
