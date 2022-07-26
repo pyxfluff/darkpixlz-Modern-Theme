@@ -153,9 +153,7 @@ div.boxed, .admin-content .admin-contents, .full-width, .boxed.white,
     border-radius: 0.25em;
     min-height: 40px;
 }
-body{
-    background-image:url("https://d3bpeqsaub0i6y.cloudfront.net/plugins/discourse-teams-sidebar/images/teams-pattern.gif")!important;
-}
+
 pre code{
     border-radius:8px;
 }
@@ -1092,21 +1090,6 @@ img.avatar {
 .user-invite-none {
     font-size: 25px;
     font-weight: 1000;
-}
-
-.user-additional-controls .single-select-header,
-.user-additional-controls button {
-    background-color: var(--tertiary);
-}
-
-.user-additional-controls .single-select-header,
-.user-additional-controls button .d-button-label {
-    color: black
-}
-
-.user-additional-controls .single-select-header,
-.user-additional-controls .btn .d-icon {
-    color: black !important;
 }
 .topic-map {
     background-color:#06060600
