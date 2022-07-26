@@ -993,6 +993,19 @@ discourse you really gotta fix your search system
 .topic-body .topic-meta-data {
     right: -5px
 }
+#reply-control.open,
+.d-editor-textarea-wrapper {
+    background-color: rgba(var(--header_background-rgb), 0.15);
+    &::before {
+      content: ''!important;
+      position: absolute!important;
+      width: 100%!important;
+      height: 100%!important;
+      -webkit-backdrop-filter: blur(2rem)!important;
+      backdrop-filter: blur(2rem)!important;      
+      z-index: -1!important;
+    }
+  }
 div.row {
     background:0;
 }
