@@ -527,6 +527,18 @@ html body #main-outlet {
     padding-bottom: 5% !important;
     box-shadow: 0 24px 40px rgb(0, 0, 0), 0 10.8529px 24.1177px rgba(0, 0, 0, 0.0456112), 0 4.50776px 10.0172px rgba(0, 0, 0, 0.035), 0 1.63037px 3.62304px rgba(0, 0, 0, 0.0243888);
 }
+.user-main .about.has-background .staff-counters {
+    border-radius:8px 8px 0px 0px;
+    background-color:#292929;
+}
+.user-main .about .staff-counters {
+    border-radius:8px 8px 8px 8px;
+    background-color:#292929;
+}
+#main-outlet-wrapper .sidebar-wrapper {
+    top:72px;
+    max-height:965px
+}
 
 .archetype-regular html body #main-outlet {
     min-height: 500px;
