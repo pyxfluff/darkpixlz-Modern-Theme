@@ -208,6 +208,9 @@ aside.onebox {
 .display-search-banner #main-outlet {
     padding-top: 1em;
 }
+.user-main .staff-counters > div, .user-main .staff-counters > div a {
+    color:white;
+}
 
 .alert {
     margin: 1em 0;
@@ -534,10 +537,6 @@ html body #main-outlet {
 .user-main .about .staff-counters {
     border-radius:8px 8px 8px 8px;
     background-color:#292929;
-}
-#main-outlet-wrapper .sidebar-wrapper {
-    top:72px;
-    max-height:965px
 }
 
 .archetype-regular html body #main-outlet {
