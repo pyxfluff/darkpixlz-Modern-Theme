@@ -1028,7 +1028,9 @@ div.ac-wrap,
 .menu-panel.drop-down,
 .popup-menu,
 #reply-control.open,
-.d-editor-textarea-wrapper {
+.d-editor-textarea-wrapper,
+.select-kit.single-select.dropdown-select-box.is-expanded .select-kit-collection, 
+.select-kit.single-select.dropdown-select-box.is-expanded .select-kit-body { // Why tf is this so long??
   background-color: rgba(var(--header_background-rgb), 0.15);
   &::before {
     content: '';
