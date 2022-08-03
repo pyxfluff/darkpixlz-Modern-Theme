@@ -1080,4 +1080,6 @@ blockquote {
   webkit-animation: rotate-forever .5s infinite linear;
   padding-left: 32px;
   background-size: 32px 32px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
