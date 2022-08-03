@@ -1072,3 +1072,10 @@ blockquote {
         margin-right: 0.65em;
     }
 }
+.spinner { 
+  background-image:url(https://cdn.discordapp.com/attachments/896497506895147008/1004482400648175838/unknown.png?size=4096);
+  width:32px;
+  height:32px;
+  animation: rotate-forever .5s infinite linear;
+  webkit-animation: rotate-forever .5s infinite linear;
+}
