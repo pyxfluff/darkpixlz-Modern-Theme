@@ -654,7 +654,15 @@ body.archetype-regular #main-outlet {
     }
   }
 }
-
+svg.PixlzThemeSearchIcon {
+      position: relative;
+      display: table-row;
+      height: 50px !important;
+      width: 50px;
+      top: 227px;
+      left: 220px;
+      fill: #e0e0e0;
+}
 .ip-lookup .location-box {
   background-color: rgba(36, 36, 36, 0.07);
   border-radius: 8px;
