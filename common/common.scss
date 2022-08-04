@@ -928,12 +928,6 @@ nav.post-controls .actions button{
 img.avatar {
   border-radius: 15px;
 }
-
-.search-container .search-page-heading {
-  padding: 2em 3.8em;
-  font-size: 5em;
-}
-
 .search-advanced-additional-options {
   font-size: 20px;
 }
@@ -1076,7 +1070,7 @@ blockquote {
   webkit-animation: rotate-forever .4s infinite linear;
 }
 .search-container .search-page-heading {
-  margin: 1em 0 2em 0 !important;
-  font-size: 5em !important; // use smaller font size on smaller screen
-  text-align: center !important;
+  margin: 1em 0 2em 0;
+  font-size: 5em; // use smaller font size on smaller screen
+  text-align: center;
 }
