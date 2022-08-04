@@ -1075,3 +1075,8 @@ blockquote {
   animation: rotate-forever .4s infinite linear;
   webkit-animation: rotate-forever .4s infinite linear;
 }
+.search-container .search-page-heading {
+  margin: 1em 0 2em 0 !important;
+  font-size: 5em !important; // use smaller font size on smaller screen
+  text-align: center !important;
+}
