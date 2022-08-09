@@ -678,7 +678,15 @@ svg.PixlzThemeSearchIcon {
   z-index: 1;
   position: relative;
 }
-
+.d-editor-preview .image-wrapper .button-wrapper .scale-btn-container, 
+.d-editor-preview .image-wrapper .button-wrapper .alt-text-readonly-container,
+.d-editor-preview .image-wrapper .button-wrapper .alt-text-edit-container {
+  background-color:rgba(0,0,0,1),
+  border-radius: 8px;
+  backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
+}
+  
 .published-page {
   &::before{
     background: linear-gradient(90deg, var(--tertiary-hover) 0%, var(--tertiary) 100%);
