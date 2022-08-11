@@ -1082,3 +1082,34 @@ blockquote {
   font-size: 5em; // use smaller font size on smaller screen
   text-align: center;
 }
+// scss goes brrrr
+.dashboard {
+  .navigation {
+    .navigation-item {
+      .dashboard-next {
+        .navigation {
+          .navigation-item {
+            border-radius:8px 8px 0px 0px
+          }
+        }
+      }
+    }
+  }
+}
+.menu-panel .widget-link, .menu-panel .categories-link, .admin-controls {
+    border-radius:8px;
+}
+.nav-stacked a.active {
+  border-radius:8px;
+}
+.nav-stacked, .admin-controls {
+  background:var(--primary-very-low);
+  border-radius:8px;
+}
+.admin-detail, .admin-controls .controls, .nav-stacked li, .admin-nav {
+  border-radius:0px; //That's a first
+}
+
+  
+  
+  
