@@ -1140,3 +1140,7 @@ nav.post-controls .actions .double-button button.button-count:not(.my-likes) {
 .topic-post article.boxed {
   padding-top:15px;
 }
+
+.fixed-modal:not(.history-modal) .modal-body:not(.reorder-categories):not(.poll-ui-builder):not(.poll-breakdown) {
+  border-radius:18px;
+}
