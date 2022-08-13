@@ -386,12 +386,6 @@ div.ac-wrap {
   -webkit-backdrop-filter: blur(2rem);
 }
 
-.modal-backdrop.in {
-  background-color: rgba(36, 36, 36, 0.00);
-  backdrop-filter: blur(5rem);
-  -webkit-backdrop-filter: blur(5rem);
-}
-
 .menu-panel {
   .widget-link,
   .categories-link {
@@ -1111,6 +1105,38 @@ blockquote {
   border-radius:0px; //That's a first
 }
 
-  
-  
-  
+.modal-inner-container {
+  border-radius:18px;
+}
+
+nav.post-controls .actions,
+.desktop-view nav.post-controls .show-replies,
+.d-header-icons .icon,
+.topic-list-item, tr {
+  border-radius:8px;
+}
+
+.discourse-kanban-container .discourse-kanban-list {
+  border-radius:18px;
+  background-color:var(--primary-very-low);
+}
+
+nav.post-controls .actions .double-button button.button-count:not(.my-likes) {
+  border-radius:8px 0px 0px 8px
+}
+
+.topic-status-info:empty, .topic-timer-info:empty {
+  display:none;
+}
+    
+.floating-search-input .search-banner-inner.wrap .search-menu .search-input {
+  border-radius:28px !important;
+}
+
+.topic-body {
+  border:0px
+}
+
+.topic-post article.boxed {
+  padding-top:15px;
+}
