@@ -1155,3 +1155,10 @@ span.staff :after {
     padding-right: 4px;
     display: inline-block;
 }
+
+.topic-avatar .avatar-flair.rounded, .avatar-flair-preview .avatar-flair.rounded, 
+.collapsed-info .user-profile-avatar .avatar-flair.rounded,
+.user-image .avatar-flair.rounded,
+.latest-topic-list-item .avatar-flair.rounded {
+  background-color:transparent !important;
+}
