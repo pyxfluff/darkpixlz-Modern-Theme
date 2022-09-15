@@ -1,3 +1,4 @@
 Is_Cursor_Active:
+   value: false
    description: Disables the Pointer cursor.
    type: bool
