@@ -11,24 +11,15 @@ body {
 /* Make cursor stay normal*/
 
 @if $Is_Cursor_Active {
-body,
-button,div,span,a,
-img,svg,
-h1,h2,h3,h4,h5,h6,p,
-summary,
-input,textbox,input,textarea,
-li,ul {
-  cursor: default !important;
-} @else {
   body,
-button,div,span,a,
-img,svg,
-h1,h2,h3,h4,h5,h6,p,
-summary,
-input,textbox,input,textarea,
-li,ul {
-  cursor: inherit;
-  
+  button,div,span,a,
+  img,svg,
+  h1,h2,h3,h4,h5,h6,p,
+  summary,
+  input,textbox,input,textarea,
+  li,ul {
+    cursor: default !important;
+  }
 }
 
 .cooked img:not(.thumbnail):not(.emoji),
