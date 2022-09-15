@@ -9,6 +9,8 @@ body {
 }
 
 /* Make cursor stay normal*/
+
+@if $Is_Cursor_Active {
 body,
 button,div,span,a,
 img,svg,
@@ -17,6 +19,7 @@ summary,
 input,textbox,input,textarea,
 li,ul {
   cursor: default !important;
+}
 }
 
 .cooked img:not(.thumbnail):not(.emoji),
