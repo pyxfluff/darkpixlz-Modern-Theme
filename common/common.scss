@@ -18,7 +18,7 @@ body {
 }
 
 #main-outlet-wrapper #main-outlet {
-    @if $Blur_Background {
+    @if $Is_Background_Blurred {
     backdrop-filter:blur(3rem);
     background-color:#0a0a0aa6;
   }
