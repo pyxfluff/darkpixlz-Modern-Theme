@@ -13,7 +13,7 @@ Is_Background_Blurred:
    description: "Enables body background blur."
    type: bool
    
- Background_Type:
+Background_Type:
   default: auto
   type: enum
   choices:
