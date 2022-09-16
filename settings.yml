@@ -10,7 +10,7 @@ Background_Image:
    
 Is_Background_Blurred:
    default: true
-   description: "Enables body background blur."
+   description: "Enables body background blur. WARNING: Enforces a dark background as of right now"
    type: bool
    
 Background_Type:
