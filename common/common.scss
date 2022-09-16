@@ -8,7 +8,7 @@ body {
         rgba(var(--secondary-rgb), 0.75) 100%
       ),
       url($Background_Image);
-    background-size: #$Tile_Size;
+    background-size: $Tile_Size;
   } @else {
     background-image: url($Background_Image);
     background-size: cover;
