@@ -10,20 +10,17 @@ body {
 
 /* Make cursor stay normal*/
 
-@if $Is_Cursor_Active {
-  .shijsfiifjsdjonf80HJ0iuf {
-    display:none;
-  }
-} @else {
-    body,
-   button,div,span,a,
-    img,svg,
-    h1,h2,h3,h4,h5,h6,p,
-   summary,
-   input,textbox,input,textarea,
-   li,ul {
+body,
+button,div,span,a,
+img,svg,
+h1,h2,h3,h4,h5,h6,p,
+summary,
+input,textbox,input,textarea,
+li,ul {
+  @if $Is_Cursor_Enabled == "false" {
     cursor: default !important;
   }
+  // I assume here are more properties not only cursor... 
 }
 
 .cooked img:not(.thumbnail):not(.emoji),
