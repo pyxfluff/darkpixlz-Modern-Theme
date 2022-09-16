@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,h6,p,
 summary,
 input,textbox,input,textarea,
 li,ul {
-  @if $Is_Cursor_Enabled == "false" {
+  @if $Is_Cursor_Active == "false" {
     cursor: default !important;
   }
   // I assume here are more properties not only cursor... 
