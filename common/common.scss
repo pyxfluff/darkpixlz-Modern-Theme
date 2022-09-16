@@ -14,7 +14,8 @@ body {
   .shijsfiifjsdjonf80HJ0iuf {
     display:none;
   }
-} @else {
+}
+@if $Is_Cursor_Active == false {
     body,
    button,div,span,a,
     img,svg,
