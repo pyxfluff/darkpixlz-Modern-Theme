@@ -14,7 +14,7 @@ Is_Background_Blurred:
    type: bool
    
 Background_Type:
-  default: auto
+  default: scale_to_fit
   type: enum
   choices:
     - tile
