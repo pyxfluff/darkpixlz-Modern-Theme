@@ -2,3 +2,27 @@ Is_Cursor_Active:
    default: false
    description: "Disables the Pointer cursor."
    type: bool
+
+
+Background_Image:
+   default: "https://cdn.pixabay.com/photo/2017/03/05/21/43/planet-2120004_960_720.jpg"
+   description: "Link to a background image. WARNING: MUST CONTAIN https:// TO WORK"
+   type: string
+   
+Is_Background_Blurred:
+   default: true
+   description: "Enables body background blur."
+   type: bool
+   
+ Background_Type:
+  default: auto
+  type: enum
+  choices:
+    - tile
+    - scale_to_fit
+  description: "Choose to have your custom background scaled to fit, or tiled"
+  
+Tile_Size:
+   default: 350
+   description: "Size for the tile background type. Will only work if Background Type is set to tile."
+   type: integer
