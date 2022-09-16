@@ -11,14 +11,8 @@ body {
 /* Make cursor stay normal*/
 
 @if $Is_Cursor_Active {
-  body,
-  button,div,span,a,
-  img,svg,
-  h1,h2,h3,h4,h5,h6,p,
-  summary,
-  input,textbox,input,textarea,
-  li,ul {
-    cursor: inherit !important;
+  .shijsfiifjsdjonf80HJ0iuf {
+    display:none;
   }
 } @else {
     body,
@@ -1162,7 +1156,7 @@ span.staff :after {
   content: "Staff";
     color: white;
     background-color: #00A9DB;
-    border-radius: 8px 0px 0px 8px;
+    border-radius: 8px;
     margin-left:5px;
     padding-left: 4px;
     padding-right: 4px;
