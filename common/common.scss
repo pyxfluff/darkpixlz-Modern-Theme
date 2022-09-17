@@ -1217,3 +1217,13 @@ span.staff :after {
 .latest-topic-list-item .avatar-flair.rounded {
   background-color: transparent !important;
 }
+
+// Centered users
+
+//TODO
+.user-main .about .details {
+  .user-profile-avatar {
+    text-align:center;
+    float:none;
+  }
+}
