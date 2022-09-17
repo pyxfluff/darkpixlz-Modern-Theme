@@ -986,6 +986,10 @@ img.avatar {
   font-weight: 1000;
 }
 
+input[type]::before, div.ac-wrap::before, .popup-menu::before, #reply-control.open::before, .d-editor-textarea-wrapper::before {
+  display:none;
+}
+
 .topic-map {
   background-color: rgba(6, 6, 6, 0);
 }
