@@ -400,7 +400,8 @@ div.ac-wrap {
 
 .chat-composer-dropdown__list,
 [data-tippy-root],
-.tippy-box {
+.tippy-box,
+input[type], div.ac-wrap, .popup-menu, #reply-control.open, .d-editor-textarea-wrapper {
   background-color: rgba(36, 36, 36, 0.07);
   border-radius: 8px;
   backdrop-filter: blur(10rem);
