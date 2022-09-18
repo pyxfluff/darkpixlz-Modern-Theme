@@ -1,4 +1,4 @@
-// DarkPixlz 2022
+// Change background image here
 
 body {
   @if $Background_Type == "tile" {
@@ -400,8 +400,7 @@ div.ac-wrap {
 
 .chat-composer-dropdown__list,
 [data-tippy-root],
-.tippy-box,
-input[type], div.ac-wrap, .popup-menu, #reply-control.open, .d-editor-textarea-wrapper {
+.tippy-box {
   background-color: rgba(36, 36, 36, 0.07);
   border-radius: 8px;
   backdrop-filter: blur(10rem);
@@ -987,10 +986,6 @@ img.avatar {
   font-weight: 1000;
 }
 
-input[type]::before, div.ac-wrap::before, .popup-menu::before, #reply-control.open::before, .d-editor-textarea-wrapper::before {
-  display:none;
-}
-
 .topic-map {
   background-color: rgba(6, 6, 6, 0);
 }
@@ -1217,14 +1212,4 @@ span.staff :after {
 .user-image .avatar-flair.rounded,
 .latest-topic-list-item .avatar-flair.rounded {
   background-color: transparent !important;
-}
-
-// Centered users
-
-//TODO
-.user-main .about .details {
-  .user-profile-avatar {
-    text-align:center;
-    float:none;
-  }
 }
