@@ -488,6 +488,11 @@ div.ac-wrap {
   }
 }
 
+input[type]::before, div.ac-wrap::before, .popup-menu::before, #reply-control.open::before, .d-editor-textarea-wrapper::before {
+  display:none;
+}
+
+
 body.archetype-regular #main-outlet {
   min-height: 500px;
 }
