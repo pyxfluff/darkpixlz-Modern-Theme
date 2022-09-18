@@ -50,6 +50,7 @@ ul {
   @if $Is_Cursor_Active == "false" {
     cursor: default !important;
   }
+  // I assume here are more properties not only cursor...
 }
 
 .cooked img:not(.thumbnail):not(.emoji),
@@ -125,10 +126,6 @@ nav.post-controls .actions .double-button button.has-like .d-icon {
     top: 43px;
     border-radius: 0.25em;
   }
-}
-
-.user-content {
-  background:transparent;
 }
 
 div.boxed,
