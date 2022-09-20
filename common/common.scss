@@ -1223,3 +1223,16 @@ span.staff :after {
   height:calc(100vh - (var(--header-offset) + 80px));
   border-radius:16px;
 }
+
+
+// Sidebar highlight
+.sidebar-section-link-wrapper {
+  .sidebar-section-link.active {
+    @if $Is_Background_Blurred {
+         backdrop-filter: blur(1rem);
+         background-color: #074854a6;
+      }
+    }
+  }
+}
+  
