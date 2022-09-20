@@ -17,12 +17,16 @@ body {
   font-family: "Poppins";
 }
 
-#main-outlet-wrapper #main-outlet {
+#main-outlet-wrapper {
+  #main-outlet,
+  .sidebar-wrapper {
     @if $Is_Background_Blurred {
-    backdrop-filter:blur(3rem);
-    background-color:#0a0a0aa6;
+      backdrop-filter: blur(3rem);
+      background-color: #0a0a0aa6;
+    }
   }
 }
+
 
 /* Make cursor stay normal*/
 
