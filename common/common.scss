@@ -1211,3 +1211,11 @@ span.staff :after {
 .latest-topic-list-item .avatar-flair.rounded {
   background-color: transparent !important;
 }
+
+
+// Floating sidebar 
+#main-outlet-wrapper .sidebar-wrapper {
+  top:calc(var(--header-offset) + 30px);
+  height:calc(100vh - (var(--header-offset) + 80px));
+  border-radius:16px;
+}
