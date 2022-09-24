@@ -1232,3 +1232,10 @@ span.staff :after {
 .user-content-wrapper .user-content, .user-main .about.has-background .details {
   background:transparent;
 }
+
+.popup-tip.bad {
+  background:#5563ff;
+  border-radius:8px;
+  width:100%;
+  text-align:center;
+}
