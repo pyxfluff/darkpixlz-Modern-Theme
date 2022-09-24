@@ -913,6 +913,7 @@ div.row {
 }
 
 body:not(.ios-safari-composer-hacks) #reply-control.open {
+  background:transparent;
   backdrop-filter:blur(2rem);
   -webkit-backdrop-filter: blur(2rem);
 }
