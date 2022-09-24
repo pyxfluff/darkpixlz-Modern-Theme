@@ -1240,6 +1240,35 @@ span.staff :after {
   text-align:center;
 }
 
-.user-main .about .details {
+.user-main .about .details, .user-main .about.collapsed-info .details {
   background:transparent;
 }
+
+// Redesigned Notifications
+
+
+//User notifications page
+.user-stream .item, .user-stream .user-stream-item {
+  border:1px solid var(--primary-low);
+  margin-bottom:1em;
+  border-radius:18px;
+  background-color:rgba(var(--secondary),0.2);
+}
+
+.user-content .user-notifications-filter {
+  margin-bottom:1em;
+}
+
+// User Menu
+.user-menu .quick-access-panel li:not(.show-all) {
+  margin-bottom:.2em;
+  border-radius:8px;
+}
+
+.drop-down-mode .d-header-icons .active .icon:after {
+  border:none;  
+}
+
+
+
+
