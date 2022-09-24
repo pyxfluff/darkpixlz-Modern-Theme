@@ -912,7 +912,10 @@ div.row {
   background: transparent;
 }
 
-body:not(.ios-safari-composer-hacks) #reply-control.open {
+body:not(.ios-safari-composer-hacks) #reply-control.open,
+.d-editor-textarea-wrapper.disabled, .d-editor-textarea-wrapper,
+#reply-control .mini-tag-chooser .select-kit-header, #reply-control .category-input .category-chooser,
+#reply-control #reply-title {
   background:transparent;
   backdrop-filter:blur(2rem);
   -webkit-backdrop-filter: blur(2rem);
