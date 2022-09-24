@@ -873,7 +873,7 @@ discourse you really gotta fix your search system
   margin-right: auto;
 }
 
-/*Ultra's mockup on the flair, I liked it so I made it*/
+
 .topic-avatar,
 .avatar-flair-preview,
 .collapsed-info .user-profile-avatar,
@@ -886,6 +886,7 @@ discourse you really gotta fix your search system
       right: -14px;
     }
   }
+  
 }
 
 .user-card-avatar,
@@ -1074,6 +1075,7 @@ blockquote {
     }
   }
 }
+
 .post-notice {
   margin-bottom: 1em;
   border: none;
@@ -1234,4 +1236,7 @@ span.staff :after {
       }
     }
   }
-  
+
+.user-content-wrapper .user-content, .user-main .about.has-background .details {
+  background:transparent;
+}
