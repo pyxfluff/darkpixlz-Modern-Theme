@@ -25,3 +25,9 @@ Tile_Size:
    default: 350
    description: "Size for the tile background type. Will only work if Background Type is set to tile."
    type: integer
+   
+ 
+Staff_tag:
+   default: true
+   description: "Enables Staff tag. WARNING: NOT COMPATIBLE WITH USER STATUSES"
+   type: bool
