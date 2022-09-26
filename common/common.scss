@@ -1,4 +1,4 @@
-// Change background image here
+// DarkPixlz 2022
 
 body {
   @if $Background_Type == "tile" {
@@ -679,6 +679,33 @@ body.archetype-regular #main-outlet {
     }
   }
 }
+nav.post-controls .actions,
+.desktop-view nav.post-controls .show-replies,
+.d-header-icons .icon,
+.topic-list-item,
+tr {
+  width: 100%;
+  display: flex;
+  margin-bottom: 0.5em;
+  background-color: var(--secondary);
+  border: 1px solid rgba(var(--primary-rgb), 0.2);
+  border-radius: 1em;
+  position: relative;
+  transition: box-shadow 100ms ease-in-out;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+  &.visited {
+    border: 1px solid rgba(var(--primary-rgb), 0.1);
+    .discourse-tag {
+      opacity: 0.75;
+    }
+    &:hover {
+      border: 1px solid rgba(var(--primary-rgb), 0.25);
+      .discourse-tag {
+        opacity: 1;
+      }
+    }
+  }
+}
 svg.PixlzThemeSearchIcon {
   position: relative;
   display: table-row;
@@ -931,7 +958,7 @@ body:not(.ios-safari-composer-hacks) #reply-control.open,
 }
 
 .popup-menu {
-  border-radius: 8px;
+  border-radius: 18px;
 }
 
 .discourse-reactions-state-panel .container,
@@ -1272,28 +1299,33 @@ span.staff :after {
   padding: 10px;
 }
 
-// At this point I had changed my indent size
+
 th.views.sortable.num.topic-list-data {
-	display:none;
+  display: none;
 }
 
 .admin-customize .themes-list-container .themes-list-filter {
-	border-radius: 0px 0px 8px 8px;
+  border-radius: 0px 0px 8px 8px;
 }
 
 .admin-customize .themes-list-header .tab {
-	border-radius: 8px 8px 0px 0px;
+  border-radius: 8px 8px 0px 0px;
 }
 
 div.uploaded-image-preview.input-xxlarge {
-	border-radius:8px;
-	background-image:url(https://community.blackiron.dev/uploads/default/original/2X/9/9fbd708e43a1bbc29cf84e7fd80aaecabbcf2630.png);
+  border-radius: 8px;
+  background-image: url(https://community.blackiron.dev/uploads/default/original/2X/9/9fbd708e43a1bbc29cf84e7fd80aaecabbcf2630.png);
 }
 
-div.edit-category .edit-category-title-bar {
-	border-radius:8px;
+div.edit-category {
+  .edit-category-title-bar {
+    border-radius: 8px;
+  }
+  .warning {
+    border-radius: 8px;
+  }
 }
 
-div.edit-category .warning {
-	border-radius:8px;
+.select-kit.is-expanded .select-kit-body {
+  border-radius: 16px;
 }
