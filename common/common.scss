@@ -679,33 +679,7 @@ body.archetype-regular #main-outlet {
     }
   }
 }
-nav.post-controls .actions,
-.desktop-view nav.post-controls .show-replies,
-.d-header-icons .icon,
-.topic-list-item,
-tr {
-  width: 100%;
-  display: flex;
-  margin-bottom: 0.5em;
-  background-color: var(--secondary);
-  border: 1px solid rgba(var(--primary-rgb), 0.2);
-  border-radius: 1em;
-  position: relative;
-  transition: box-shadow 100ms ease-in-out;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
-  &.visited {
-    border: 1px solid rgba(var(--primary-rgb), 0.1);
-    .discourse-tag {
-      opacity: 0.75;
-    }
-    &:hover {
-      border: 1px solid rgba(var(--primary-rgb), 0.25);
-      .discourse-tag {
-        opacity: 1;
-      }
-    }
-  }
-}
+
 svg.PixlzThemeSearchIcon {
   position: relative;
   display: table-row;
