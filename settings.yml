@@ -1,6 +1,6 @@
 Is_Cursor_Active:
    default: false
-   description: "Disables the Pointer cursor."
+   description: "Enabled the pointer to change states."
    type: bool
 
 Background_Image:
