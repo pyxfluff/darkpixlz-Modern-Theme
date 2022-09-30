@@ -1303,3 +1303,9 @@ div.edit-category {
 .select-kit.is-expanded .select-kit-body {
   border-radius: 16px;
 }
+
+.welcome-cta {
+  border-radius:16px;
+  background-color:rgba(var(--primary-low-rgb),.4);
+  backdrop-filter:blur(2rem);
+}
