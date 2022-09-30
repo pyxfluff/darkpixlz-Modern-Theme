@@ -717,11 +717,14 @@ svg.PixlzThemeSearchIcon {
 .d-editor-preview .image-wrapper .button-wrapper .scale-btn-container,
 .d-editor-preview .image-wrapper .button-wrapper .alt-text-readonly-container,
 .d-editor-preview .image-wrapper .button-wrapper .alt-text-edit-container,
-.modal-middle-container {
+.modal-middle-container, .dialog-overlay {
   background-color: #0000;
   border-radius: 8px;
   backdrop-filter: blur(2rem);
   -webkit-backdrop-filter: blur(2rem);
+}
+.dialog-content {
+  border-radius:18px;
 }
 
 .published-page {
