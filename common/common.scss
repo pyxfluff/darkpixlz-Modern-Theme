@@ -1312,3 +1312,10 @@ div.edit-category {
   background-color:rgba(var(--primary-low-rgb),.4);
   backdrop-filter:blur(2rem);
 }
+
+
+.composer-popup {
+  border-radius:8px;
+  backdrop-filter:blur(1rem);
+  background-color:rgba(var(--primary-low-rgb), 0.4)
+}
