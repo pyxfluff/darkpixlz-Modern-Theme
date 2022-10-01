@@ -23,6 +23,10 @@ body {
     @if $Is_Background_Blurred {
       backdrop-filter: blur(3rem);
       background-color: #0a0a0aa6;
+      input[type], .select-kit.combo-box .select-kit-header,
+      .d-editor-textarea-wrapper, div.ac-wrap {
+        background:transparent;
+      }
     }
   }
 }
