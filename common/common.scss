@@ -1330,7 +1330,8 @@ div.edit-category {
   border-radius:8px;
 }
 
-.select-kit .select-kit-header:not(.btn) {
+.select-kit .select-kit-header:not(.btn),
+.select-kit.multi-select {
   background:transparent;
   border-radius:8px;
 }
