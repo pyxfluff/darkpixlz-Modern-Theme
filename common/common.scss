@@ -1323,3 +1323,14 @@ div.edit-category {
   backdrop-filter:blur(1rem);
   background-color:rgba(var(--primary-low-rgb), 0.4)
 }
+
+.user-preferences .bio-composer .d-editor-preview, 
+.group-form-bio .d-editor-preview, 
+.edit-category-tab-topic-template .d-editor-preview {
+  border-radius:8px;
+}
+
+.select-kit .select-kit-header:not(.btn) {
+  background:transparent;
+  border-radius:8px;
+}
