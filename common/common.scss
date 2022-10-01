@@ -1013,12 +1013,13 @@ div.poll .results {
   margin-right: -6px;
 }
 
-#reply-control .save-or-cancel .cancel {
+// CANCEL BUTTON
+// TODO: Add all cancels sitewide
+#reply-control .save-or-cancel .cancel, #ember590 {
   background: #2c2c2c;
   border-radius: 8px;
   width: 70px;
   height: 30px;
-  content: "test" !important;
   text-align: center !important;
   justify-content: center;
 }
