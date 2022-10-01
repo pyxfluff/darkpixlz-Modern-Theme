@@ -1015,7 +1015,7 @@ div.poll .results {
 
 // CANCEL BUTTON
 // TODO: Add all cancels sitewide
-#reply-control .save-or-cancel .cancel, #ember590 {
+#reply-control .save-or-cancel .cancel, a#ember-1524.active.ember-view {
   background: #2c2c2c;
   border-radius: 8px;
   width: 70px;
@@ -1239,7 +1239,7 @@ span.staff :after {
   background: transparent;
 }
 
-.popup-tip.bad {
+.popup-tip.bad, .alert.alert-error {
   background: #5563ff;
   border-radius: 8px;
   width: 100%;
