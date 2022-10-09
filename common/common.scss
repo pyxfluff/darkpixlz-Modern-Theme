@@ -1,5 +1,8 @@
 // DarkPixlz 2022
 
+
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
 body {
   @if $Background_Type == "tile" {
     background-image: linear-gradient(
@@ -14,7 +17,7 @@ body {
     background-size: cover;
   }
   /* Make the body a bit lighter */
-  font-family: "Poppins";
+  font-family: "Nunito" !important; 
 }
 
 div#main-outlet.wrap.not-found-container,
