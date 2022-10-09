@@ -33,7 +33,7 @@ body {
 
 .wizard-container {
   @if $Is_Background_Blurred {
-      background-color:#131313a3
+      background-color:#131313a3;
       input[type], .select-kit.combo-box .select-kit-header,
       .d-editor-textarea-wrapper, div.ac-wrap {
         background:transparent;
