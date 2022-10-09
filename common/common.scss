@@ -96,6 +96,8 @@ input,
 textarea,
 li,
 ul {
+  font-family:"Nunito" !important;
+  
   @if $Is_Cursor_Active == "false" {
     cursor: default !important;
   }
