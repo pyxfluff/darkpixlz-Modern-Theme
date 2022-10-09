@@ -31,6 +31,32 @@ body {
   }
 }
 
+.wizard-container {
+  @if $Is_Background_Blurred {
+      background-color:#131313a3
+      input[type], .select-kit.combo-box .select-kit-header,
+      .d-editor-textarea-wrapper, div.ac-wrap {
+        background:transparent;
+      }
+  }
+}
+  
+
+body.wizard {
+  @if $Background_Type == "tile" {
+    background-image: linear-gradient(
+        0deg,
+        rgba(var(--secondary-rgb), 1) 0%,
+        rgba(var(--secondary-rgb), 0.75) 100%
+      ),
+      url($Background_Image);
+    background-size: $Tile_Size;
+  } @else {
+    background-image: url($Background_Image) !important;
+    background-size: cover;
+  }
+}
+
 /* Make cursor stay normal*/
 
 body,
@@ -1019,6 +1045,7 @@ div.poll .results {
 
 .wizard-container__button.finish {
   width:fit-content;
+  padding:1rem;
 }
 
 div#banner,
