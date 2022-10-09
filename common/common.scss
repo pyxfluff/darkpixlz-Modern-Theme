@@ -1438,3 +1438,7 @@ div.edit-category {
 .deleted .regular > .cooked, .regular > .cooked {
   border-radius:8px;
 }
+
+.user-card-avatar .avatar-flair.rounded, .user-profile-avatar .avatar-flair.rounded {
+  background:transparent;
+}
