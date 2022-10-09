@@ -17,19 +17,32 @@ body {
   font-family: "Poppins";
 }
 
-div#main-outlet.wrap.not-found-container, #main-outlet-wrapper {
+div#main-outlet.wrap.not-found-container,
+#main-outlet-wrapper {
   #main-outlet,
   .sidebar-wrapper {
     @if $Is_Background_Blurred {
       backdrop-filter: blur(3rem) !important;
       background-color: #0a0a0aa6 !important;
-      input[type], .select-kit.combo-box .select-kit-header,
-      .d-editor-textarea-wrapper, div.ac-wrap {
-        background:transparent;
+      input[type],
+      .select-kit.combo-box .select-kit-header,
+      .d-editor-textarea-wrapper,
+      div.ac-wrap {
+        background: transparent;
+      }
+    } @else {
+      backdrop-filter: none !important;
+      background-color: var(--secondary) !important;
+      input[type],
+      .select-kit.combo-box .select-kit-header,
+      .d-editor-textarea-wrapper,
+      div.ac-wrap {
+        background: transparent;
       }
     }
   }
 }
+
 
 .wizard-container {
   @if $Is_Background_Blurred {
