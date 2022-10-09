@@ -1387,3 +1387,7 @@ div.edit-category {
 .groups-boxes {
   grid-template-columns:repeat(auto-fit,minmax(70%,1fr));
 }
+
+.admin-badges .current-badge textarea {
+  border-radius:10px;
+}
