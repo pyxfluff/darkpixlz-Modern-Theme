@@ -1007,7 +1007,8 @@ div.poll .results {
 
 // CANCEL BUTTON
 // TODO: Add all cancels sitewide
-#reply-control .save-or-cancel .cancel {
+#reply-control .save-or-cancel .cancel,
+.wizard-container__button.finish {
   background: #2c2c2c;
   border-radius: 8px;
   width: 70px;
@@ -1330,3 +1331,14 @@ div.edit-category {
 }
 
 
+.wizard-container__button {
+  border-radius:8px;
+}
+
+.fa.d-icon.d-icon-chevron-left.svg-icon.svg-string::after {
+  content:"Return";
+}
+
+.wizard-container .wizard-container__image-upload canvas {
+  border-radius:18px;
+}
