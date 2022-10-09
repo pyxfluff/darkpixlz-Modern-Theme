@@ -10,7 +10,7 @@ body {
       url($Background_Image);
     background-size: $Tile_Size;
   } @else {
-    background-image: url($Background_Image);
+    background-image: url($Background_Image) !important;
     background-size: cover;
   }
   /* Make the body a bit lighter */
@@ -1015,6 +1015,10 @@ div.poll .results {
   height: 30px;
   text-align: center !important;
   justify-content: center;
+}
+
+.wizard-container__button.finish {
+  width:fit-content;
 }
 
 div#banner,
