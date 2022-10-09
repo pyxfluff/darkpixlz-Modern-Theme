@@ -1400,3 +1400,19 @@ div.edit-category {
 .topic-chat-container {
   background:transparent !important;
 }
+
+.show-more {
+  border-radius:8px;
+}
+.floating-search-input .search-banner-inner.wrap .search-menu .results ul.list li,
+.floating-search-input .search-banner-inner.wrap .search-menu .results ul li,
+.search-menu .search-result-topic .search-link, .search-menu .search-result-post .search-link {
+  border-radius:8px;
+}
+
+.floating-search-input .search-banner-inner.wrap .search-menu .results  {
+  background-color: rgba(36, 36, 36, 0.21);
+  backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
+}
+  
