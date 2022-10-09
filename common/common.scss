@@ -1379,3 +1379,11 @@ div.edit-category {
 .admin-report .main .report-alert.no-data, .admin-report .main .report-alert.rate-limited {
   background:transparent;
 }
+
+.discourse-no-touch .groups-boxes .group-box {
+  border-radius:8px;
+}
+
+.groups-boxes {
+  grid-template-columns:repeat(auto-fit,minmax(em,1fr));
+}
