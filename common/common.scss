@@ -1475,7 +1475,8 @@ div.edit-category {
 }
 
 .body-page {
-  width:100%
+  width:100%;
+  max-width:999999px;
 }
 
 div.login-required {
