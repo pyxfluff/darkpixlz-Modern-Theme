@@ -1488,7 +1488,8 @@ div.login-required {
 }
 
 .login-required::before {
-  content:"👋";
-  font-size:8em;
+  content:" ";
+  font-size:10em;
   background-image:url("/images/emoji/twitter/wave.png?v=12");
+  background-repeat:no-repeat
 }
