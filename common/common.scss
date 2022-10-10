@@ -45,6 +45,28 @@ div#main-outlet.wrap.not-found-container,
     }
   }
 }
+#main-outlet {
+   @if $Is_Background_Blurred {
+      backdrop-filter: blur(3rem) !important;
+      background-color: #0a0a0aa6 !important;
+      input[type],
+      .select-kit.combo-box .select-kit-header,
+      .d-editor-textarea-wrapper,
+      div.ac-wrap {
+        background: transparent;
+      }
+    } @else {
+      backdrop-filter: none !important;
+      background-color: var(--secondary) !important;
+      input[type],
+      .select-kit.combo-box .select-kit-header,
+      .d-editor-textarea-wrapper,
+      div.ac-wrap {
+        background: transparent;
+      }
+    }
+}
+  
 
 
 .wizard-container {
@@ -1278,7 +1300,7 @@ span.staff :after {
   background: transparent;
 }
 
-.popup-tip.bad, .alert.alert-error {
+.popup-tip.bad, .alert.alert-error, .alert.alert-success {
   background: #5563ff;
   border-radius: 8px;
   width: 100%;
@@ -1442,3 +1464,25 @@ div.edit-category {
 .user-card-avatar .avatar-flair.rounded, .user-profile-avatar .avatar-flair.rounded {
   background:transparent;
 }
+
+#simple-container {
+  background:transparent;
+}
+
+.d-modal.create-account .login-welcome-header, .d-modal.login-modal .login-welcome-header, 
+.invites-show .login-welcome-header, .admin-invite-page .login-welcome-header {
+  background:transparent;
+}
+
+.body-page {
+  width:100%
+}
+
+div.login-required {
+  text-align:center;
+}
+
+.body-page-button-container {
+  place-content:center;
+}
+
