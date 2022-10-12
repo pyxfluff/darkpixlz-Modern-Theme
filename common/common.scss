@@ -1300,11 +1300,15 @@ span.staff :after {
   background: transparent;
 }
 
-.popup-tip.bad, .alert.alert-error, .alert.alert-success {
+.popup-tip.bad, .alert.alert-error, .alert.alert-success, .broken-theme-alert {
   background: #5563ff;
   border-radius: 8px;
   width: 100%;
   text-align: center;
+}
+
+.broken-theme-alert {
+  width:90%;
 }
 
 .user-main .about .details,
