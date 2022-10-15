@@ -418,7 +418,7 @@ div.ac-wrap {
         font-size: 1.25em;
       }
       img.avatar {
-        border-radius: 0.25em;
+        border-radius: 0.50em !important;
       }
     }
   }
@@ -692,7 +692,7 @@ body.archetype-regular #main-outlet {
             .avatar {
               width: 40px;
               height: 40px;
-              border-radius: 8px;
+              border-radius: 12px !important;
             }
           }
           .main-link {
@@ -1031,7 +1031,7 @@ nav.post-controls .actions button {
 }
 
 img.avatar {
-  border-radius: 15px;
+  border-radius: 18px !important;
 }
 .search-advanced-additional-options {
   font-size: 20px;
