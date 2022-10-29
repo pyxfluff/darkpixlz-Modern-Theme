@@ -1527,3 +1527,6 @@ div.login-required {
 .select-kit.single-select.dropdown-select-box.is-expanded .select-kit-collection, .select-kit.single-select.dropdown-select-box.is-expanded .select-kit-body {
   border-radius:18px;
 }
+.user-card.show, .group-card.show, .user-card .card-content, .group-card .card-content {
+  left:0px !important;
+}
