@@ -1523,3 +1523,7 @@ div.login-required {
   -webkit-backdrop-filter: blur(2rem);
   
 }
+
+.select-kit.single-select.dropdown-select-box.is-expanded .select-kit-collection, .select-kit.single-select.dropdown-select-box.is-expanded .select-kit-body {
+  border-radius:18px;
+}
