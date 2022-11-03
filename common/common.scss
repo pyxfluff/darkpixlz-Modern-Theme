@@ -1530,3 +1530,6 @@ div.login-required {
 .user-card.show, .group-card.show, .user-card .card-content, .group-card .card-content {
   left:0px !important;
 }
+.select-kit.is-expanded .select-kit-body {
+  position:unset !important
+}
