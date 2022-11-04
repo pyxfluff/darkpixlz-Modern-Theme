@@ -1527,9 +1527,19 @@ div.login-required {
 .select-kit.single-select.dropdown-select-box.is-expanded .select-kit-collection, .select-kit.single-select.dropdown-select-box.is-expanded .select-kit-body {
   border-radius:18px;
 }
+
 .user-card.show, .group-card.show, .user-card .card-content, .group-card .card-content {
   left:0px !important;
 }
+
 .select-kit.is-expanded .select-kit-body {
   position:unset !important
+}
+
+.user-content {
+  background:transparent !important;
+}
+
+.new-user-wrapper .user-navigation .nav-pills li a.active, .new-user-wrapper .user-navigation .nav-pills li {
+  border-radius:0px !important
 }
