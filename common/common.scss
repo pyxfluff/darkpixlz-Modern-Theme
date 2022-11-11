@@ -1543,3 +1543,7 @@ div.login-required {
 .new-user-wrapper .user-navigation .nav-pills li a.active, .new-user-wrapper .user-navigation .nav-pills li {
   border-radius:0px !important
 }
+
+.composer-popup.education-message {
+  background:rgba(var(--tertiary-rgb),.3);
+}
