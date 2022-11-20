@@ -1547,3 +1547,7 @@ div.login-required {
 .composer-popup.education-message {
   background:rgba(var(--tertiary-rgb),.3);
 }
+
+.static-progress-bar .progress-bar-background, .static-progress-bar .progress-bar-background .progress-bar {
+  border-radius:8px;
+}
