@@ -1300,11 +1300,15 @@ span.staff :after {
   background: transparent;
 }
 
-.popup-tip.bad, .alert.alert-error, .alert.alert-success, .broken-theme-alert {
-  background: #5563ff;
-  border-radius: 8px;
+.popup-tip.bad, .alert.alert-error, .alert.alert-success, .broken-theme-alert, 
+  background: #5563ff !important;
+  border-radius: 8px !important;
   width: 100%;
   text-align: center;
+}
+
+.popup-tip.bad, .alert.alert-error, .alert.alert-success, .broken-theme-alert {
+  width:95%;
 }
 
 .broken-theme-alert {
