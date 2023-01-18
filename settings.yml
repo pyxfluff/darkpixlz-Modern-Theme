@@ -31,3 +31,18 @@ Staff_tag:
    default: true
    description: "Enables Staff tag next to admins and moderators."
    type: bool
+
+Header-Color-1:
+   default: "#202020"
+   description: "1st Color in the header gradient."
+   type: string
+
+Header-Color-2:
+   default: "#353535"
+   description: "Second Color in the header gradient."
+   type: string
+
+Header-Color-3:
+   default: "#454545"
+   description: "Third Color in the header gradient."
+   type: string

@@ -1,4 +1,4 @@
-// DarkPixlz 2022
+// DarkPixlz 2022-2023
 
 
 @import url('https://fonts.googleapis.com/css?family=Nunito');
@@ -242,7 +242,7 @@ pre code {
 }
 
 .d-header {
-  background-image: url("https://cdn.discordapp.com/attachments/896497506895147008/995926334524096572/Untitled2.png?size=4096");
+  background-image: linear-gradient(to right, $Header-Color-1, $Header-Color-2, $Header-Color-3);
   background-repeat: no-repeat;
   border-radius: 0px 0px 8px 8px;
 }
@@ -1285,7 +1285,7 @@ blockquote {
 // Speed up the spinner to look better
 .spinner {
   animation: rotate-forever 0.4s infinite linear;
-  webkit-animation: rotate-forever 0.4s infinite linear;
+  -webkit-animation: rotate-forever 0.4s infinite linear;
 }
 
 .search-container .search-page-heading {
