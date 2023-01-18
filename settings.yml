@@ -29,5 +29,5 @@ Tile_Size:
  
 Staff_tag:
    default: true
-   description: "Enables Staff tag. WARNING: NOT COMPATIBLE WITH USER STATUSES"
+   description: "Enables Staff tag next to admins and moderators."
    type: bool
