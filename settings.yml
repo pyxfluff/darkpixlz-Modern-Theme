@@ -32,17 +32,22 @@ Staff_tag:
    description: "Enables Staff tag next to admins and moderators."
    type: bool
 
-Header-Color-1:
+Header_Color_1:
    default: "#202020"
    description: "1st Color in the header gradient."
    type: string
 
-Header-Color-2:
+Header_Color_2:
    default: "#353535"
    description: "Second Color in the header gradient."
    type: string
 
-Header-Color-3:
+Header_Color_3:
    default: "#454545"
    description: "Third Color in the header gradient."
    type: string
+
+Header_Direction:
+   default: "90deg"
+   type: string
+   description: "Direction the header is in, in degrees. ONLY Type [number]deg, anything else will break it!"

@@ -242,7 +242,7 @@ pre code {
 }
 
 .d-header {
-  background-image: linear-gradient(to right, $Header-Color-1, $Header-Color-2, $Header-Color-3);
+  background-image: linear-gradient($Header_Direction, $Header_Color_1, $Header_Color_2, $Header_Color_3);
   background-repeat: no-repeat;
   border-radius: 0px 0px 8px 8px;
 }
