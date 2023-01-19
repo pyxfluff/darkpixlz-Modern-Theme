@@ -22,9 +22,9 @@ Background_Type:
   description: "Choose to have your custom background scaled to fit, or tiled"
   
 Tile_Size:
-   default: 350
-   description: "Size for the tile background type. Will only work if Background Type is set to tile."
-   type: integer
+   default: "150px"
+   description: "Size for the tile background type. Will only work if Background Type is set to tile. WARNING: You must include 'px' at the end of it, or it wont work!"
+   type: string
    
  
 Staff_tag:
