@@ -1694,12 +1694,12 @@ div.login-required {
 }
 
 #main-outlet-wrapper .sidebar-wrapper {
-  @if $Full_Width {
+  @if $Full_Width == true {
     left: 10px;
   }
 }
 
-@if $Full_Width {
+@if $Full_Width == true {
   // Thanks to @MWGMorningWood
   // Added sidebar support ^^^^^
   :root {
