@@ -232,7 +232,6 @@ pre code {
 .d-header {
   background-image: linear-gradient($Header_Direction, $Header_Color_1, $Header_Color_2, $Header_Color_3);
   background-repeat: no-repeat;
-  border-radius: 0px 0px 8px 8px;
 }
 
 .search-input {
@@ -282,8 +281,6 @@ pre code {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0) !important;
   // backdrop-filter: blur(1rem);
   top: 4px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
 }
 
 .category-list.with-topics .category {
@@ -423,7 +420,7 @@ div.ac-wrap {
 .d-header {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
   margin-top: 5px;
-  border-radius: 12px 12px 12px 12px;
+  border-radius: 18px;
 }
 
 .d-header-icons {
@@ -1393,7 +1390,7 @@ span.staff :after {
   .sidebar-section-link.active {
     @if $Is_Background_Blurred {
       backdrop-filter: blur(1rem);
-      background-color: #074854a6;
+      background-color: #0e2e86a6;
     }
   }
 }
@@ -1678,3 +1675,69 @@ div.login-required {
 .static-progress-bar .progress-bar-background .progress-bar {
   border-radius: 8px;
 }
+
+.discourse-no-touch .sortable:hover,
+.discourse-no-touch .sortable:focus {
+  background-color: transparent !important;
+}
+
+.full-width .contents .topic-list .topic-list-body .topic-list-item {
+  background-color: rgba(var(--secondary-rgb), .4);
+}
+
+.alert-bootstrap-mode .col-button .alert--link {
+  min-width: 150px;
+}
+
+.btn-primary.bootstrap-invite-button.btn.btn-icon-text {
+  min-width: 127px;
+}
+
+#main-outlet-wrapper .sidebar-wrapper {
+  @if $Full_Width {
+    left: 10px;
+  }
+}
+
+@if $Full_Width {
+  // Thanks to @MWGMorningWood
+  // Added sidebar support ^^^^^
+  :root {
+    --d-max-width: 95%;
+  }
+
+  #main-outlet {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+}
+
+
+// New User Card support, may break old one??
+
+.d-user-card__main-content {
+  background-color: rgba(var(--secondary-rgb), .4);
+  backdrop-filter: blur(3rem);
+}
+
+.d-user-card__button.btn-default.btn.btn-icon-text, .d-user-card__field {
+  background-color: rgba(var(--primary-low-rgb),.5);
+}
+
+.d-user-card__field {
+  // Revert to the arguably better version which was removed earlier in development
+  margin-right:10px;
+}
+
+.d-user-card__relative-time {
+  backdrop-filter: blur(2rem);
+}
+
+.d-user-card__badges-more, .d-user-card__badges .user-card-badge-link {
+  background-color: rgba(var(--secondary-rgb), .6);
+  backdrop-filter: blur(2rem);
+}
+

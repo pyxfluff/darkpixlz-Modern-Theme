@@ -51,3 +51,8 @@ Header_Direction:
    default: "90deg"
    type: string
    description: "Direction the header is in, in degrees. ONLY Type [number]deg, anything else will break it!"
+
+Full_Width:
+   default: false
+   type: bool
+   description: "Adds full width to the theme."
