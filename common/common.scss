@@ -1358,7 +1358,8 @@ nav.post-controls .actions .double-button button.button-count:not(.my-likes) {
 .fixed-modal:not(.history-modal) .modal-body:not(.reorder-categories):not(.poll-ui-builder):not(.poll-breakdown) {
   border-radius: 18px;
 }
-
+// code now, reformat later 
+@if $Staff_tag {
 span.staff :after {
   content: "Staff";
   color: white;
@@ -1368,6 +1369,7 @@ span.staff :after {
   padding-left: 4px;
   padding-right: 4px;
   display: inline-block;
+}
 }
 
 .topic-avatar .avatar-flair.rounded,
