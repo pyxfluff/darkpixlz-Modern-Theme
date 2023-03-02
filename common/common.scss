@@ -26,7 +26,7 @@ div#main-outlet.wrap.not-found-container,
 
   #main-outlet,
   .sidebar-wrapper {
-    @if $Is_Background_Blurred {
+    @if $Is_Background_Blurred == "true" {
       backdrop-filter: blur(3rem) !important;
       background-color: #0a0a0aa6 !important;
 
@@ -53,7 +53,7 @@ div#main-outlet.wrap.not-found-container,
 }
 
 #main-outlet {
-  @if $Is_Background_Blurred {
+  @if $Is_Background_Blurred == "true" {
     backdrop-filter: blur(3rem) !important;
     background-color: #0a0a0aa6 !important;
 
@@ -81,7 +81,7 @@ div#main-outlet.wrap.not-found-container,
 
 
 .wizard-container {
-  @if $Is_Background_Blurred {
+  @if $Is_Background_Blurred == "true" {
     background-color: #131313a3;
 
     input[type],
@@ -134,7 +134,7 @@ li,
 ul {
   font-family: "Nunito" !important;
 
-  @if $Is_Cursor_Active =="false" {
+  @if $Is_Cursor_Active == "false" {
     cursor: default !important;
   }
 
@@ -1388,7 +1388,7 @@ span.staff :after {
 // Sidebar highlight
 .sidebar-section-link-wrapper {
   .sidebar-section-link.active {
-    @if $Is_Background_Blurred {
+    @if $Is_Background_Blurred == "true" {
       backdrop-filter: blur(1rem);
       background-color: #0e2e86a6;
     }
@@ -1694,12 +1694,12 @@ div.login-required {
 }
 
 #main-outlet-wrapper .sidebar-wrapper {
-  @if $Full_Width {
+  @if $Full_Width == "true" {
     left: 10px;
   }
 }
 
-@if $Full_Width {
+@if $Full_Width == "true" {
   // Thanks to @MWGMorningWood
   // Added sidebar support ^^^^^
   :root {
