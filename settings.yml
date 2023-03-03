@@ -34,25 +34,35 @@ Staff_tag:
 
 Header_Color_1:
    default: "#202020"
-   description: "1st Color in the header gradient."
+   description: "1st Color in the header gradient. WARNING: Header gradient is ignored if Blur Header Background is enabled."
    type: string
 
 Header_Color_2:
    default: "#353535"
-   description: "Second Color in the header gradient."
+   description: "Second Color in the header gradient. WARNING: Header gradient is ignored if Blur Header Background is enabled."
    type: string
 
 Header_Color_3:
    default: "#454545"
-   description: "Third Color in the header gradient."
+   description: "Third Color in the header gradient. WARNING: Header gradient is ignored if Blur Header Background is enabled."
    type: string
 
 Header_Direction:
    default: "90deg"
    type: string
-   description: "Direction the header is in, in degrees. ONLY Type [number]deg, anything else will break it!"
+   description: "Direction the header is in, in degrees. ONLY Type [number]deg, anything else will break it! WARNING: Header gradient is ignored if Blur Header Background is enabled."
 
 Full_Width:
    default: false
    type: bool
    description: "Adds full width to the theme."
+
+Disable_Image_Rounding:
+   default: false
+   type: bool
+   description: "Disables rounding on images."
+
+Blur_Header_Background:
+   default: true
+   type: bool
+   description: "Makes the header semitransparent and blurred. Not compatible with header gradient."

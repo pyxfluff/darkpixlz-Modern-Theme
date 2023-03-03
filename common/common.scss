@@ -26,7 +26,7 @@ div#main-outlet.wrap.not-found-container,
 
   #main-outlet,
   .sidebar-wrapper {
-    @if $Is_Background_Blurred == "true" {
+    @if $Is_Background_Blurred =="true" {
       backdrop-filter: blur(3rem) !important;
       background-color: #0a0a0aa6 !important;
 
@@ -53,7 +53,7 @@ div#main-outlet.wrap.not-found-container,
 }
 
 #main-outlet {
-  @if $Is_Background_Blurred == "true" {
+  @if $Is_Background_Blurred =="true" {
     backdrop-filter: blur(3rem) !important;
     background-color: #0a0a0aa6 !important;
 
@@ -81,7 +81,7 @@ div#main-outlet.wrap.not-found-container,
 
 
 .wizard-container {
-  @if $Is_Background_Blurred == "true" {
+  @if $Is_Background_Blurred =="true" {
     background-color: #131313a3;
 
     input[type],
@@ -134,7 +134,7 @@ li,
 ul {
   font-family: "Nunito" !important;
 
-  @if $Is_Cursor_Active == "false" {
+  @if $Is_Cursor_Active =="false" {
     cursor: default !important;
   }
 
@@ -1358,18 +1358,19 @@ nav.post-controls .actions .double-button button.button-count:not(.my-likes) {
 .fixed-modal:not(.history-modal) .modal-body:not(.reorder-categories):not(.poll-ui-builder):not(.poll-breakdown) {
   border-radius: 18px;
 }
+
 // code now, reformat later 
 @if $Staff_tag {
-span.staff :after {
-  content: "Staff";
-  color: white;
-  background-color: #00a9db;
-  border-radius: 8px;
-  margin-left: 5px;
-  padding-left: 4px;
-  padding-right: 4px;
-  display: inline-block;
-}
+  span.staff :after {
+    content: "Staff";
+    color: white;
+    background-color: #00a9db;
+    border-radius: 8px;
+    margin-left: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    display: inline-block;
+  }
 }
 
 .topic-avatar .avatar-flair.rounded,
@@ -1390,7 +1391,7 @@ span.staff :after {
 // Sidebar highlight
 .sidebar-section-link-wrapper {
   .sidebar-section-link.active {
-    @if $Is_Background_Blurred == "true" {
+    @if $Is_Background_Blurred =="true" {
       backdrop-filter: blur(1rem);
       background-color: #0e2e86a6;
     }
@@ -1695,25 +1696,33 @@ div.login-required {
   min-width: 127px;
 }
 
-#main-outlet-wrapper .sidebar-wrapper {
-  @if $Full_Width == "true" {
-    left: 10px;
-  }
-}
+@if $Full_Width =="true" {
 
-@if $Full_Width == "true" {
   // Thanks to @MWGMorningWood
   // Added sidebar support ^^^^^
   :root {
     --d-max-width: 95%;
   }
 
+  #main-outlet-wrapper .sidebar-wrapper {
+    left: 10px;
+  }
+
   #main-outlet {
+    width:90%; // fixes random bug with topics
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
     margin-bottom: 50px;
+  }
+  // support for topics
+  .post-stream, .small-action .small-action-desc {
+    // not sure why actions are different from post-stream?
+    width:100%;
+  }
+  .topic-body {
+    width:100%;
   }
 }
 
@@ -1725,21 +1734,49 @@ div.login-required {
   backdrop-filter: blur(3rem);
 }
 
-.d-user-card__button.btn-default.btn.btn-icon-text, .d-user-card__field {
-  background-color: rgba(var(--primary-low-rgb),.5);
+.d-user-card__button.btn-default.btn.btn-icon-text,
+.d-user-card__field {
+  background-color: rgba(var(--primary-low-rgb), .5);
 }
 
-.d-user-card__field {
+.d-user-card__field, .user-card-metadata-outlet h3 {
   // Revert to the arguably better version which was removed earlier in development
-  margin-right:10px;
+  margin-right: 10px;
 }
 
 .d-user-card__relative-time {
   backdrop-filter: blur(2rem);
 }
 
-.d-user-card__badges-more, .d-user-card__badges .user-card-badge-link {
+.d-user-card__badges-more,
+.d-user-card__badges .user-card-badge-link {
   background-color: rgba(var(--secondary-rgb), .6);
   backdrop-filter: blur(2rem);
 }
 
+aside.quote .title {
+  padding-bottom:10px;
+  margin-bottom:10px;
+}
+.btn:not(.themes-tab):not(.components-tab), .select-kit.dropdown-select-box .dropdown-select-box-header {
+  border:none;
+}
+
+
+// Remove image rounding
+
+@if $Disable_Image_Rounding == "true" {
+  img {
+    border-radius: 0px !important
+  }
+}
+
+.d-header {
+  @if $Blur_Header_Background {
+    background: rgba(var(--primary-low-rgb),.6);
+    backdrop-filter:blur(2rem);
+  }
+  width:95%;
+  display:inline flow-root list-item;
+  margin-bottom:15px;
+}

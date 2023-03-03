@@ -24,3 +24,7 @@
 .d-header .title {
     margin-right: 10px;
 }
+
+.user-card.show, .group-card.show, .user-card .card-content, .group-card .card-content {
+  width:650px;
+}
