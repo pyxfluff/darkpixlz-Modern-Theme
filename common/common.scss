@@ -1739,7 +1739,7 @@ div.login-required {
   background-color: rgba(var(--primary-low-rgb), .5);
 }
 
-.d-user-card__field, .user-card-metadata-outlet h3 {
+.d-user-card__field, .user-card-metadata-outlet {
   // Revert to the arguably better version which was removed earlier in development
   margin-right: 10px;
 }
