@@ -28,3 +28,10 @@
 .user-card.show, .group-card.show, .user-card .card-content, .group-card .card-content {
   width:650px;
 }
+
+@if $Full_Width == "true" {
+  #reply-control {
+    width:75%;
+    max-width:75%
+  }
+}
