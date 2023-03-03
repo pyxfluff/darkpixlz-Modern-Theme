@@ -1737,6 +1737,7 @@ div.login-required {
 .d-user-card__button.btn-default.btn.btn-icon-text,
 .d-user-card__field, .user-card-metadata-outlet {
   background-color: rgba(var(--primary-low-rgb), .5);
+  border-radius: 8px;
 }
 
 .d-user-card__field, .user-card-metadata-outlet {
@@ -1779,4 +1780,8 @@ aside.quote .title {
   width:95%;
   display:inline flow-root list-item;
   margin-bottom:15px;
+}
+
+.d-user-card__main-content {
+  border-radius: 18px;
 }
