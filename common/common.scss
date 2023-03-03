@@ -1735,7 +1735,7 @@ div.login-required {
 }
 
 .d-user-card__button.btn-default.btn.btn-icon-text,
-.d-user-card__field {
+.d-user-card__field, .user-card-metadata-outlet {
   background-color: rgba(var(--primary-low-rgb), .5);
 }
 
