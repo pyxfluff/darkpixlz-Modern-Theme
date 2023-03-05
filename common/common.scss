@@ -1773,7 +1773,7 @@ aside.quote .title {
 }
 
 .d-header {
-  @if $Blur_Header_Background {
+  @if $Blur_Header_Background == "true" {
     background: rgba(var(--primary-low-rgb),.6);
     backdrop-filter:blur(2rem);
   }
