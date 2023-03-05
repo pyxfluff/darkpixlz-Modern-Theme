@@ -3,13 +3,10 @@
 
 <script type="text/discourse-plugin" version="0.8">
     console.log("running");
-    const setRootBgImage = () => {
-      const el = document.querySelector('.user-profile-image');
-      const bgImage = window.getComputedStyle(el).getPropertyValue('background-image');
-      document.documentElement.style.setProperty('--profile-bg-img', bgImage);
-    };
-  
-    setRootBgImage();
+    setTimeout(() => {
+        const el = document.querySelector('.user-profile-image');
+        const bgImage = window.getComputedStyle(el).getPropertyValue('background-image');
+        document.documentElement.style.setProperty('--profile-bg-img', bgImage);
+      }, 1000);
     console.log("complete");
-  </script>
-  
+</script>
