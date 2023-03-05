@@ -1785,3 +1785,13 @@ aside.quote .title {
 .d-user-card__main-content {
   border-radius: 18px;
 }
+
+.user-content-wrapper .user-content, .user-main .about.has-background .details {
+  background-image: var(--profile-bg-img);
+  border-radius: 0px 0px 18px 18px;
+  padding: 15px;
+}
+
+.user-main .about.has-background .user-profile-image {
+  border-radius: 18px 18px 0px 0px;
+}

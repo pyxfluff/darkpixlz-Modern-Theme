@@ -1,5 +1,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <!--Once again, I plan to add more in the future.-->
-<script type="text/javascript">
-  
+<script>
+    // I'm testing this here, could be removed...
+    function setRootBgImage() {
+        const el = document.querySelector('.user-profile-image');
+        const bgImage = window.getComputedStyle(el).getPropertyValue('background-image');
+        document.documentElement.style.setProperty('--profile-bg-img', bgImage);
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        setRootBgImage();
+    });
 </script>
