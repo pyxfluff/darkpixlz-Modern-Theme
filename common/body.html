@@ -194,3 +194,16 @@
     </div>
   </DSection>
 </script>
+
+<script type="text/javascript" data-template-name="_background-image">
+  // I'm testing this here, could be removed...
+  function setRootBgImage() {
+      const el = document.querySelector('.user-profile-image');
+      const bgImage = window.getComputedStyle(el).getPropertyValue('background-image');
+      document.documentElement.style.setProperty('--profile-bg-img', bgImage);
+  }
+
+  window.addEventListener('load', function () {
+      setRootBgImage();
+  });
+</script>
