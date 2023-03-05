@@ -1,2 +1,15 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <!--Once again, I plan to add more in the future.-->
+
+<script type="text/discourse-plugin" version="0.8">
+    console.log("running");
+    const setRootBgImage = () => {
+      const el = document.querySelector('.user-profile-image');
+      const bgImage = window.getComputedStyle(el).getPropertyValue('background-image');
+      document.documentElement.style.setProperty('--profile-bg-img', bgImage);
+    };
+  
+    setRootBgImage();
+    console.log("complete");
+  </script>
+  

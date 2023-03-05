@@ -195,12 +195,3 @@
   </DSection>
 </script>
 
-<script type="text/discourse-plugin" version="0.8">
-  const setRootBgImage = () => {
-    const el = document.querySelector('.user-profile-image');
-    const bgImage = window.getComputedStyle(el).getPropertyValue('background-image');
-    document.documentElement.style.setProperty('--profile-bg-img', bgImage);
-  };
-
-  setRootBgImage();
-</script>
