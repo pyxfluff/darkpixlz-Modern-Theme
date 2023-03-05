@@ -1360,7 +1360,7 @@ nav.post-controls .actions .double-button button.button-count:not(.my-likes) {
 }
 
 // code now, reformat later 
-@if $Staff_tag {
+@if $Staff_tag == "true" {
   span.staff :after {
     content: "Staff";
     color: white;
