@@ -1801,7 +1801,7 @@ aside.quote .title {
   border-radius: 18px 18px 0px 0px;
 }
 
-.user-main .about .details .primary:not(.collapsed-info) {
+.user-main .about .details .primary:not(.collapsed-info), .user-main .about .secondary {
   z-index:50;
   backdrop-filter:blur(2rem);
   border-radius: 8px;
