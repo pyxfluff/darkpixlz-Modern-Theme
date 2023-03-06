@@ -1788,23 +1788,20 @@ aside.quote .title {
 
 
 
-.user-content-wrapper .user-content, .user-main .about.has-background .details {
+.user-content-wrapper .user-content, .user-main .about.has-background .details:not(.collapsed-info) {
   border-radius: 0px 0px 18px 18px;
   padding: 15px;
 }
 
-.user-content-wrapper .user-content, .user-main .about.has-background .details {
+.user-content-wrapper .user-content, .user-main .about.has-background .details:not(.collapsed-info) {
   background-image: var(--profile-bg-img);
-  background-size: cover;
-  background-position: center center;
-  height: 200px;
 }
 
 .user-main .about.has-background .user-profile-image {
   border-radius: 18px 18px 0px 0px;
 }
 
-.user-main .about .details .primary {
+.user-main .about .details .primary:not(.collapsed-info) {
   z-index:50;
   backdrop-filter:blur(2rem);
   border-radius: 8px;
