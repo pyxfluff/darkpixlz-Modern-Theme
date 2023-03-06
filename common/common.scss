@@ -1803,3 +1803,10 @@ aside.quote .title {
 .user-main .about.has-background .user-profile-image {
   border-radius: 18px 18px 0px 0px;
 }
+
+.user-main .about .details .primary {
+  z-index:50;
+  backdrop-filter:blur(2rem);
+  border-radius: 8px;
+  padding:5px;
+}
