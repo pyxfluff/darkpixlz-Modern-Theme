@@ -3,15 +3,15 @@
 
 <script type="text/discourse-plugin" version="0.9">
     api.onPageChange(() => {
-      let currentRouteParent = api.container.lookup("router:main").currentRoute?.parent;
+        let currentRouteParent = api.container.lookup("router:main").currentRoute?.parent;
         if (currentRouteParent.name.includes("user")) {
             let userBg = currentRouteParent.attributes.profile_background_upload_url;
-    
+
             if (userBg) {
-                document.documentElement.style.setProperty('--profile-bg-img', userBg);
+                document.documentElement.style.setProperty('--profile-bg-img', `url(${userBg})`);
             } else {
                 document.documentElement.style.removeProperty('--profile-bg-img');
-          }
+            }
         }
     });
-    </script> 
+</script>

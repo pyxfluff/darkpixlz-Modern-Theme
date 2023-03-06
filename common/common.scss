@@ -1794,7 +1794,7 @@ aside.quote .title {
 }
 
 .user-content-wrapper .user-content, .user-main .about.has-background .details {
-  background-image: url(var(--profile-bg-img));
+  background-image: var(--profile-bg-img);
   background-size: cover;
   background-position: center center;
   height: 200px;
