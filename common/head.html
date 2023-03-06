@@ -1,12 +1,17 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <!--Once again, I plan to add more in the future.-->
 
-<script type="text/discourse-plugin" version="0.8">
-    console.log("running");
-    setTimeout(() => {
-        const el = document.querySelector('.user-profile-image');
-        const bgImage = window.getComputedStyle(el).getPropertyValue('background-image');
-        document.documentElement.style.setProperty('--profile-bg-img', bgImage);
-      }, 1000);
-    console.log("complete");
-</script>
+<script type="text/discourse-plugin" version="0.9">
+    api.onPageChange(() => {
+      let currentRouteParent = api.container.lookup("router:main").currentRoute?.parent;
+        if (currentRouteParent.name.includes("user")) {
+            let userBg = currentRouteParent.attributes.profile_background_upload_url;
+    
+            if (userBg) {
+                document.documentElement.style.setProperty('--profile-bg-img', userBg);
+            } else {
+                document.documentElement.style.removeProperty('--profile-bg-img');
+          }
+        }
+    });
+    </script> 
