@@ -1786,10 +1786,18 @@ aside.quote .title {
   border-radius: 18px;
 }
 
+
+
 .user-content-wrapper .user-content, .user-main .about.has-background .details {
-  background-image: url(var(--profile-bg-img));
   border-radius: 0px 0px 18px 18px;
   padding: 15px;
+}
+
+.user-profile-header {
+  background-image: url(var(--profile-bg-img));
+  background-size: cover;
+  background-position: center center;
+  height: 200px;
 }
 
 .user-main .about.has-background .user-profile-image {
