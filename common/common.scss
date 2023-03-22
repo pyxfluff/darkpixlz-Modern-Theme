@@ -1807,6 +1807,7 @@ aside.quote .title {
   }
 
   .about {
+
     .details .primary:not(.collapsed-info),
     .user-main .about .secondary {
       z-index: 50;
@@ -1856,4 +1857,30 @@ aside.quote .title {
 section.tag-info {
   border-radius: 18px;
   background-color: rgba(var(--secondary-rgb), 0.4);
+}
+
+.profiler-results .profiler-popup {
+  background-color: rgba(var(--secondary-rgb), 0.6);
+  backdrop-filter: blur(2rem);
+  border-radius: 18px;
+  border: 1px solid #262626;
+  color: #d5d5d5
+}
+.profiler-result {
+
+  .profiler-timings th,
+  .profiler-label {
+    background-color: #0000;
+    color: #cacaca;
+  }
+}
+
+.profiler-results.profiler-right.profiler-top {
+  border-radius: 18px 0px 0px 18px;
+  background-color: #1e1e1e;
+}
+
+div.profiler-results.profiler-top .profiler-button {
+  background-color: none;
+  border:none;
 }
