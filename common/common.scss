@@ -1786,7 +1786,7 @@ aside.quote .title {
   }
 
   width:95%;
-  display:inline flow-root list-item;
+  display: inline-block;
   margin-bottom:15px;
 }
 
@@ -1823,7 +1823,6 @@ aside.quote .title {
   }
 }
 
-
 .user-main .about.collapsed-info .details {
   border-radius: 18px !important;
   border-bottom: none;
@@ -1836,4 +1835,25 @@ aside.quote .title {
 
 .topic-error {
   font-size: 20px;
+}
+
+.widget-link.topic-link {
+  text-align: initial; // fixed the issue where sometimes the header text would break and be centered
+}
+
+.onebox.discoursetopic {
+  border-radius: 12px;
+}
+
+.d-header #site-logo {
+  border-radius: 8px;
+}
+
+.widget-button.btn-flat.toggle-like.has-like.fade-out.no-text.btn-icon {
+  border-radius: 0px 8px 8px 0px; // make it so it fits in with the text, which is rounded on one side as well
+}
+
+section.tag-info {
+  border-radius: 18px;
+  background-color: rgba(var(--secondary-rgb), 0.4);
 }

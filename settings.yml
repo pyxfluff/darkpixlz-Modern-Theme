@@ -1,12 +1,12 @@
 Is_Cursor_Active:
    default: false
-   description: "Enabled the pointer to change states."
+   description: "Enable the pointer to change states."
    type: bool
 
 Background_Image:
   type: upload
   default: ""
-  description: "Upload a background image."
+  description: "Upload a background image. Note: If you do not apply this, the background will be grey, and blur will not apply on the sidebar or body."
    
 Is_Background_Blurred:
    default: true
@@ -60,7 +60,7 @@ Full_Width:
 Disable_Image_Rounding:
    default: false
    type: bool
-   description: "Disables rounding on images."
+   description: "Disables rounding on images. Note: this causes inconsistencies visually and is not recommended."
 
 Blur_Header_Background:
    default: true
