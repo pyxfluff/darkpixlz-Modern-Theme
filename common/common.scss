@@ -1884,3 +1884,15 @@ div.profiler-results.profiler-top .profiler-button {
   background-color: none;
   border:none;
 }
+
+.docker-manager .progress-bar {
+  border-radius: 8px;
+}
+
+.docker-manager .progress-bar-inner {
+  border-radius: 8px 0px 0px 8px
+}
+
+.docker-manager .console-logs {
+  border-radius:18px;
+}
