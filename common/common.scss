@@ -1072,8 +1072,8 @@ body:not(.ios-safari-composer-hacks) #reply-control.open,
 
 .menu-panel.drop-down {
   background-color: rgba(0, 15, 255, 0);
-  -webkit-backdrop-filter: blur(2rem);
   backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
 }
 
 #reply-control .mini-tag-chooser .select-kit-header {
