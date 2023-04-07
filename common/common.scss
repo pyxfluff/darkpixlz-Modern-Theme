@@ -136,7 +136,7 @@ li,
 ul {
   font-family: "Nunito" !important;
 
-  @if $Is_Cursor_Active == "false" {
+  @if $Is_Cursor_Active =="false" {
     cursor: default !important;
   }
 }
@@ -1941,9 +1941,18 @@ div.profiler-results.profiler-top .profiler-button {
     border-radius: 18px;
   }
 }
-.nav-pills > li a.active {
-  color:var(--primary) !important
+
+.nav-pills>li a.active {
+  color: var(--primary) !important
 }
-.dashboard .navigation .navigation-item, .dashboard-next .navigation .navigation-item {
+
+.dashboard .navigation .navigation-item,
+.dashboard-next .navigation .navigation-item {
   border-radius: 8px 8px 0px 0px;
+}
+
+.user-main .about .secondary {
+  backdrop-filter: blur(2rem);
+  padding: 3px;
+  border-radius: 8px;
 }
