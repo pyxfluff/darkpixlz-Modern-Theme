@@ -1784,10 +1784,6 @@ aside.quote .title {
     background: rgba(var(--primary-low-rgb), .6);
     backdrop-filter: blur(2rem);
   }
-
-  width:95%;
-  display: inline-block;
-  margin-bottom:15px;
 }
 
 .d-user-card__main-content {
@@ -1799,6 +1795,7 @@ aside.quote .title {
   border-radius: 0px 0px 18px 18px;
   padding: 15px;
   background-image: var(--profile-bg-img);
+  background-position: bottom;
 }
 
 .user-main {
@@ -1866,6 +1863,7 @@ section.tag-info {
   border: 1px solid #262626;
   color: #d5d5d5
 }
+
 .profiler-result {
 
   .profiler-timings th,
@@ -1882,7 +1880,7 @@ section.tag-info {
 
 div.profiler-results.profiler-top .profiler-button {
   background-color: none;
-  border:none;
+  border: none;
 }
 
 .docker-manager .progress-bar {
@@ -1894,5 +1892,51 @@ div.profiler-results.profiler-top .profiler-button {
 }
 
 .docker-manager .console-logs {
-  border-radius:18px;
+  border-radius: 18px;
+}
+
+.nav-pills>li a.active,
+.nav-pills>li button.active {
+  background: var(--d-hover);
+}
+
+.nav-pills>li a.active,
+.nav-pills>li>a {
+  margin-right: 8px;
+}
+
+.nav-pills>li>a:hover,
+.nav-pills>li button:hover {
+  background: var(--d-hover);
+  color: var(--header_primary)
+}
+
+.admin-customize .themes-list-header {
+  border-radius: 8px 0px 0px 0px;
+}
+
+.components-tab.tab.btn.btn-icon-text {
+  border-radius: 0px 8px 0px 0px;
+}
+
+.admin-customize .themes-list-container .themes-list-item:last-child,
+.admin-customize .themes-list-container {
+  border-radius: 0px 0px 8px 8px;
+}
+
+.ace.ace_editor.ace-chaos.ace_dark {
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+@if $Centered_Topbar =="true" {
+  .d-header-wrap {
+    top: 5px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 95%;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
 }

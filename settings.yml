@@ -26,7 +26,6 @@ Tile_Size:
    description: "Size for the tile background type. Will only work if Background Type is set to tile. WARNING: You must include 'px' at the end of it, or it wont work!"
    type: string
    
- 
 Staff_tag:
    default: true
    description: "Enables Staff tag next to admins and moderators."
@@ -66,3 +65,13 @@ Blur_Header_Background:
    default: true
    type: bool
    description: "Makes the header semitransparent and blurred. Not compatible with header gradient."
+
+Mobile_Full_Width:
+   default: false
+   type: bool
+   description: "BETA: Completely use all space on mobile. Currently in beta, possibly buggy ⚠️"
+
+Centered_Topbar:
+   default: true
+   type: bool
+   description: "Makes the topbar a bit less wide, and centers."

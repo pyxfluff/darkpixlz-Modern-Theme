@@ -4,34 +4,31 @@
 
 //////////////////////////////////////////
 
-
-
-
-
-
-
-// centered header
-
-.d-header-wrap {
-    top:5px;
-    text-align: center;
-    display: block;
-    margin: auto;
-  }
-
 // move logo over a bit
 
 .d-header .title {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
-.user-card.show, .group-card.show, .user-card .card-content, .group-card .card-content {
-  width:650px;
+.user-card.show,
+.group-card.show,
+.user-card .card-content,
+.group-card .card-content {
+  width: 650px;
 }
 
-@if $Full_Width == "true" {
+@if $Full_Width =="true" {
   #reply-control {
-    width:75%;
-    max-width:75%
+    width: 75%;
+    max-width: 75%
   }
+}
+
+#main> {
+  position: static;
+}
+
+.user-content-wrapper .user-content,
+.user-main .about.has-background .details:not(.collapsed-info) {
+  height: 235px;
 }

@@ -1,19 +1,27 @@
 //DarkPixlz 2022-2023
 
 #topic-progress {
-    margin-left:5px;
-    border-radius:18px;
+    margin-left: 5px;
+    border-radius: 18px;
 }
 
 .topic-list .topic-item-stats .num.activity {
-    margin-left:-10px !important;
+    margin-left: -10px !important;
 }
 
 .topic-list .right {
-    width:70%;
+    width: 70%;
 }
 
 .topic-list .topic-item-stats .num.activity::before {
-    content:"•";
+    content: "•";
     font-size: 10px;
+}
+
+@if $Mobile_Full_Width =="true" {
+    #main-outlet {
+        padding: none !important;
+        width: 100%
+    }
+    
 }
