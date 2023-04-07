@@ -20,8 +20,9 @@
 
 @if $Mobile_Full_Width =="true" {
     #main-outlet {
-        padding: none !important;
-        width: 100%
+        margin:0px; 
+        border-radius: 0px !important;
+        width: 100%;
+        max-width:100%;
     }
-    
 }
