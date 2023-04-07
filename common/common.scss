@@ -1944,3 +1944,6 @@ div.profiler-results.profiler-top .profiler-button {
 .nav-pills > li a.active {
   color:var(--primary) !important
 }
+.dashboard .navigation .navigation-item, .dashboard-next .navigation .navigation-item {
+  border-radius: 8px 8px 0px 0px;
+}
