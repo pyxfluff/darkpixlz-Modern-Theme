@@ -525,10 +525,7 @@ div.ac-wrap {
   border: 1px solid transparent;
 }
 
-.btn:not(.themes-tab):not(.components-tab:hover),
-.select-kit.dropdown-select-box .dropdown-select-box-header:hover,
-.nav-pills>li a.active:hover,
-.nav-pills>li>a:hover {
+.btn  {
   border-radius: 8px !important;
 }
 
