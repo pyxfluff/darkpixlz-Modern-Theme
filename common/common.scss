@@ -520,12 +520,16 @@ div.ac-wrap {
 .select-kit.dropdown-select-box .dropdown-select-box-header,
 .nav-pills>li a.active,
 .nav-pills>li>a {
-  :hover {
-    border-radius: 8px !important;
-  }
 
   border-radius: 16px;
   border: 1px solid transparent;
+}
+
+.btn:not(.themes-tab):not(.components-tab:hover),
+.select-kit.dropdown-select-box .dropdown-select-box-header:hover,
+.nav-pills>li a.active:hover,
+.nav-pills>li>a:hover {
+  border-radius: 8px !important;
 }
 
 // Hover border radius 
