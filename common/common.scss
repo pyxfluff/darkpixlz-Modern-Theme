@@ -514,15 +514,33 @@ div.ac-wrap {
   }
 }
 
+// BUTTON BORDER RADIUS
+
 .btn:not(.themes-tab):not(.components-tab),
-.select-kit.dropdown-select-box .dropdown-select-box-header {
-  border-radius: 8px;
+.select-kit.dropdown-select-box .dropdown-select-box-header,
+.nav-pills>li a.active,
+.nav-pills>li>a {
+  :hover {
+    border-radius: 8px !important;
+  }
+
+  border-radius: 16px;
   border: 1px solid transparent;
+}
+
+// Hover border radius 
+.user,
+.notification,
+.user-menu.revamped #quick-access-profile li>* {
+  :hover {
+    border-radius: 8px !important;
+  }
 }
 
 .post-admin-menu.popup-menu .btn.widget-button {
   border-radius: 0px;
 }
+
 
 .unread-high-priority-notifications {
   background: var(--quaternary);
@@ -1197,6 +1215,9 @@ blockquote {
 // Goodbye button gradient
 
 .btn {
+  :hover {
+    border-radius: 8px !important;
+  }
 
   &:active,
   &.btn-active {
@@ -1277,7 +1298,6 @@ blockquote {
   text-align: center;
 }
 
-// scss goes brrrr
 .dashboard {
   .navigation {
     .navigation-item {
@@ -1907,11 +1927,11 @@ div.profiler-results.profiler-top .profiler-button {
 }
 
 .themes-tab.tab.active.btn.btn-text {
-  border-radius: 8px 0px 0px 0px;
+  border-radius: 8px 0px 0px 0px !important;
 }
 
 .components-tab.tab.btn.btn-icon-text {
-  border-radius: 0px 8px 0px 0px;
+  border-radius: 0px 8px 0px 0px !important;
 }
 
 .admin-customize .themes-list-container .themes-list-item:last-child,
@@ -1955,4 +1975,24 @@ div.profiler-results.profiler-top .profiler-button {
   backdrop-filter: blur(2rem);
   padding: 3px;
   border-radius: 8px;
+}
+
+.alert.alert-error.report-alert.rate-limited {
+  background-color: transparent !important;
+}
+
+.collapsed-info .details {
+  height: 25% !important
+}
+
+// Make styleguide more accurate to the final theme
+.styleguide pre,
+.styleguide--char-counter {
+  border-radius: 18px;
+}
+
+.create-invite-modal.modal .modal-body,
+.create-invite-bulk-modal.modal .modal-body,
+.share-topic-modal.modal .modal-body {
+  border-radius: 0px;
 }
