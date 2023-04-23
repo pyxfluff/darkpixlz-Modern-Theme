@@ -1,0 +1,10 @@
+{
+  "name": "DarkPixlzModernTheme",
+  "version": "0.0.1",
+  "repository": "darkpixlz/DarkPixlz-s-Modern-Theme",
+  "author": "darkpixlz",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-discourse": "^3.2.0"
+  }
+}
