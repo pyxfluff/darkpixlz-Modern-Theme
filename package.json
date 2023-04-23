@@ -1,8 +1,8 @@
 {
-  "name": "DarkPixlz Modern Theme",
+  "name": "darkpixlz modern theme",
   "version": "0.0.1",
   "repository": "darkpixlz/DarkPixlz-s-Modern-Theme",
-  "author": "DarkPixlz",
+  "author": "darkpixlz",
   "license": "MIT",
   "devDependencies": {
     "eslint-config-discourse": "^3.2.0"
