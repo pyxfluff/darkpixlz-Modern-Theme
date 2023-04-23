@@ -11,14 +11,14 @@
   width: 650px;
 }
 
-@if $Full_Width =="true" {
+@if $Full_Width == "true" {
   #reply-control {
     width: 75%;
-    max-width: 75%
+    max-width: 75%;
   }
 }
 
-#main> {
+#main > {
   position: static;
 }
 
