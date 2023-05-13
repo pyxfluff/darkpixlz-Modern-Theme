@@ -513,7 +513,7 @@ div.ac-wrap {
   border: 1px solid transparent;
 }
 
-.btn:hover {
+.btn:hover:not(.btn-disabled) {
   border-radius: 8px !important;
 }
 
