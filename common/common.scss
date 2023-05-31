@@ -2006,3 +2006,22 @@ div.profiler-results.profiler-top .profiler-button {
   border: 3px solid var(--d-hover);
   padding: 5px;
 }
+
+.modal-inner-container {
+  min-width: 600px;
+}
+
+.reorder-categories table {
+  width: 100%;
+}
+
+.btn-flat.modal-close.close.btn.no-text.btn-icon {
+  background: var(--primary-100);
+  padding: 10px;
+  transition: all 0.25;
+}
+
+.btn-flat.modal-close.close.btn.no-text.btn-icon::after {
+  content: " Cancel";
+  font-size: 18px;
+}
