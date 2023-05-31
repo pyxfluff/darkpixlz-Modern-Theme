@@ -2025,3 +2025,7 @@ div.profiler-results.profiler-top .profiler-button {
   content: " Cancel";
   font-size: 18px;
 }
+
+button, a {
+  transition: all 0.25; !important
+}
