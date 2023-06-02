@@ -141,7 +141,7 @@ aside.quote .title {
   border-radius: 8px;
 }
 
-// Make Like button white 
+// Make Like button white
 nav.post-controls .actions .double-button button.has-like .d-icon {
   color: #fff;
 }
@@ -998,9 +998,6 @@ svg.PixlzThemeSearchIcon {
   border-radius: 8px;
 }
 
-/*
-discourse you really gotta fix your search system
-*/
 .search-container {
   .search-header {
     background: transparent;
@@ -1168,8 +1165,6 @@ div.poll .results {
   margin-right: -6px;
 }
 
-// CANCEL BUTTON
-// TODO: Add all cancels sitewide
 #reply-control .save-or-cancel .cancel,
 .wizard-container__button.finish {
   background: #2c2c2c;
@@ -1203,7 +1198,7 @@ blockquote {
   border-radius: 8px;
 }
 
-// Goodbye button gradient
+// Remove button hover effect
 
 .btn {
   :hover {
@@ -1277,7 +1272,6 @@ blockquote {
   }
 }
 
-// Speed up the spinner to look better
 .spinner {
   animation: rotate-forever 0.4s infinite linear;
   -webkit-animation: rotate-forever 0.4s infinite linear;
@@ -1371,7 +1365,6 @@ nav.post-controls .actions .double-button button.button-count:not(.my-likes) {
   border-radius: 18px;
 }
 
-// code now, reformat later
 @if $Staff_tag == "true" {
   span.staff :after {
     content: "Staff";
@@ -1481,11 +1474,6 @@ th.views.sortable.num.topic-list-data {
 
 .admin-customize .themes-list-header .tab {
   border-radius: 8px 8px 0px 0px;
-}
-
-div.uploaded-image-preview.input-xxlarge {
-  border-radius: 8px;
-  background-image: url(https://community.blackiron.dev/uploads/default/original/2X/9/9fbd708e43a1bbc29cf84e7fd80aaecabbcf2630.png);
 }
 
 div.edit-category {
@@ -2026,6 +2014,15 @@ div.profiler-results.profiler-top .profiler-button {
   font-size: 18px;
 }
 
-button, a {
+* {
   transition: all 0.25 !important;
+}
+
+.onebox.category-onebox {
+  border-radius: 4px 18px 18px 4px;
+}
+
+aside.onebox .onebox-body h3,
+aside.onebox .onebox-body h4 {
+  font-size: var(--font-up-2);
 }
