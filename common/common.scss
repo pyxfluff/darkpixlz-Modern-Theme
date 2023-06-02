@@ -2026,3 +2026,9 @@ aside.onebox .onebox-body h3,
 aside.onebox .onebox-body h4 {
   font-size: var(--font-up-2);
 }
+
+.selected-posts {
+  border-radius: 18px;
+  background-color: rgba(var(--primary-very-low-rgb), .8);
+  border: var(--primary-very-low)
+}
