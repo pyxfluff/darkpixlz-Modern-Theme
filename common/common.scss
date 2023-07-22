@@ -2012,9 +2012,10 @@ div.profiler-results.profiler-top .profiler-button {
 .btn-flat.modal-close.close.btn.no-text.btn-icon::after {
   content: " Cancel";
   font-size: 18px;
+  font-weight: lighter;
 }
 
-*:not(.div) {
+*:not(div):not(img) {
   transition: all 0.25s !important;
 }
 
@@ -2035,7 +2036,7 @@ aside.onebox .onebox-body h4 {
 
 // Fixes onebox styling change made at some point
 
-.onebox.whitelistedgeneric {
+.onebox.whitelistedgeneric, .badge-card {
   border-radius: 12px;
   background: rgba(var(--secondary-rgb), .4);
   border: rgba(var(--secondary-rgb), .4)
@@ -2053,4 +2054,30 @@ aside.onebox .onebox-body h4 {
 
 .sidebar-wrapper .sidebar-container {
   border: none
+}
+
+.menu-tabs-container, .bottom-tabs.tabs-list {
+  border: none
+}
+
+.new-user-wrapper .user-navigation .nav-pills li a:hover, .new-user-wrapper .user-navigation .nav-pills li a:focus {
+  border-radius: none !important;
+}
+
+.uploaded-image-preview.input-xxlarge {
+  border-radius: 8px;
+}
+
+.sidebar-section-link-wrapper .sidebar-section-link {
+  background: none !important;
+}
+
+.archetype-private_message .map:first-of-type .buttons .btn {
+  border-radius: 18px;
+}
+
+.sidebar-more-section-links-details-content {
+  border-radius: 8px;
+  background: rgba(var(--secondary-rgb), .4);
+  backdrop-filter:blur(2rem)
 }
