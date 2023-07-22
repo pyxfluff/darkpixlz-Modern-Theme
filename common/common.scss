@@ -2045,7 +2045,7 @@ aside.onebox .onebox-body h4 {
 // fixes sidebar
 
 .sidebar-footer-container::before {
-    background: none;
+    background: none !important;
 }
 
 .sidebar-footer-wrapper {
