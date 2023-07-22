@@ -2036,7 +2036,7 @@ aside.onebox .onebox-body h4 {
 
 // Fixes onebox styling change made at some point
 
-.onebox.whitelistedgeneric, .badge-card {
+.onebox.whitelistedgeneric, .badge-card, aside.onebox {
   border-radius: 12px;
   background: rgba(var(--secondary-rgb), .4);
   border: rgba(var(--secondary-rgb), .4)
