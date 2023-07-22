@@ -1988,13 +1988,13 @@ div.profiler-results.profiler-top .profiler-button {
 .topic-avatar {
   border: none;
 }
-
+/*
 .topic-post article.boxed {
   border-radius: 18px;
   border: 3px solid var(--d-hover);
   padding: 5px;
 }
-
+*/ 
 .modal-inner-container {
   min-width: 600px;
 }
@@ -2014,7 +2014,7 @@ div.profiler-results.profiler-top .profiler-button {
   font-size: 18px;
 }
 
-* {
+*:not(.div) {
   transition: all 0.25s !important;
 }
 
@@ -2032,3 +2032,24 @@ aside.onebox .onebox-body h4 {
   background-color: rgba(var(--primary-very-low-rgb), .8);
   border: var(--primary-very-low)
 }
+
+// Fixes onebox styling change made at some point
+
+.onebox.whitelistedgeneric {
+  border-radius: 12px;
+  background: rgba(var(--secondary-rgb), .4);
+  border: rgba(var(--secondary-rgb), .4)
+}
+
+// fixes sidebar
+
+.sidebar-footer-container::before {
+    background: none;
+}
+
+.sidebar-footer-wrapper {
+  background: rgba(var(--secondary-rgb), .4);
+}
+
+.sidebar-wrapper .sidebar-container {
+  border: none
