@@ -2086,3 +2086,7 @@ aside.onebox .onebox-body h4 {
   border: none;
 }
 
+.modal-inner-container {
+  background: rgba(var(--secondary-rgb), 0);
+  backdrop-filter: blur(2rem)
+}
