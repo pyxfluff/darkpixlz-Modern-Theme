@@ -2,6 +2,10 @@
 
 @import url("https://fonts.googleapis.com/css?family=Nunito");
 
+:root {
+  --d-hover: rgba(var(--primary-very-low-rgb), .3) !important
+}
+
 body {
   @if $Background_Type =="tile" {
     background-image: linear-gradient(0deg,
@@ -16,6 +20,10 @@ body {
     background-size: cover;
   }
 
+  font-family: "Nunito" !important;
+}
+
+legend {
   font-family: "Nunito" !important;
 }
 
@@ -106,8 +114,7 @@ body.wizard {
   }
 }
 
-/* Make cursor stay normal*/
-
+// Make cursor stay normal
 body,
 button,
 div,
@@ -128,7 +135,8 @@ textbox,
 input,
 textarea,
 li,
-ul {
+ul,
+label {
   font-family: "Nunito" !important;
 
   @if $Is_Cursor_Active =="false" {
@@ -219,6 +227,19 @@ div.boxed,
 .admin-controls nav:before,
 .admin-controls {
   background: transparent;
+}
+
+.admin-controls,
+.admin-container {
+  scrollbar-color: auto rgb(60, 60, 60) rgb(0, 0, 0); // Only supported on Firefox for now, Chrome support "is planned"
+  background-color: rgba(var(--primary-very-low-rgb), 0.1);
+  border-radius: 8px 8px 0px 0px;
+  backdrop-filter: blur(2rem);
+}
+
+.permalink-form {
+  background: #1414156e;
+  border-radius: 8px;
 }
 
 pre code {
@@ -326,14 +347,12 @@ pre code {
   border-bottom-right-radius: 0.125em;
 }
 
-/* Notification recolor */
 .d-header-icons .unread-notifications {
-  /*New notification, also counts as "low priority"*/
   background-color: #4aaeff;
 }
 
 .unread-high-priority-notifications.badge-notification[href] {
-  /* DM/moderation action, counts as "high priority" */
+  //legacy
   background-color: #67ffb2;
 }
 
@@ -461,7 +480,8 @@ div.ac-wrap {
 .chat-drawer,
 .topic-chat-drawer-header,
 .topic-chat-drawer-content,
-.topic-chat-container {
+.topic-chat-container,
+.chat-drawer .chat-drawer-container {
   backdrop-filter: blur(2rem);
 }
 
@@ -508,8 +528,6 @@ div.ac-wrap {
   }
 }
 
-// BUTTON BORDER RADIUS
-
 .btn:not(.themes-tab):not(.components-tab),
 .select-kit.dropdown-select-box .dropdown-select-box-header,
 .nav-pills>li a.active,
@@ -522,7 +540,6 @@ div.ac-wrap {
   border-radius: 8px !important;
 }
 
-// Hover border radius
 .user,
 .notification,
 .user-menu.revamped #quick-access-profile li>* {
@@ -1285,18 +1302,8 @@ blockquote {
   text-align: center;
 }
 
-.dashboard {
-  .navigation {
-    .navigation-item {
-      .dashboard-next {
-        .navigation {
-          .navigation-item {
-            border-radius: 8px 8px 0px 0px;
-          }
-        }
-      }
-    }
-  }
+.dashboard .navigation .navigation-item {
+  border-radius: 8px 8px 0px 0px;
 }
 
 .menu-panel .widget-link,
@@ -1304,12 +1311,12 @@ blockquote {
   border-radius: 8px;
 }
 
-.nav-stacked a.active, iframe {
+.nav-stacked a.active,
+iframe {
   border-radius: 8px;
 }
 
-.nav-stacked,
-.admin-controls {
+.nav-stacked {
   background: rgba(var(--primary-low-rgb), .4);
   border-radius: 8px 8px 0px 0px;
   backdrop-filter: blur(2rem);
@@ -1437,11 +1444,16 @@ nav.post-controls .actions .double-button button.button-count:not(.my-likes) {
 
 //User notifications page
 .user-stream .item,
-.user-stream .user-stream-item {
+.user-stream .user-stream-item,
+.fk-d-menu__inner-content {
   border: 1px solid var(--primary-low);
   margin-bottom: 1em;
   border-radius: 18px;
   background-color: rgba(var(--secondary), 0.2);
+}
+
+.fk-d-menu__inner-content {
+  backdrop-filter: blur(2rem);
 }
 
 .user-content .user-notifications-filter {
@@ -2063,7 +2075,8 @@ aside.onebox {
   background: none !important;
 }
 
-.archetype-private_message .map:first-of-type .buttons .btn, .alert {
+.archetype-private_message .map:first-of-type .buttons .btn,
+.alert {
   border-radius: 18px;
 }
 
@@ -2117,4 +2130,167 @@ input[type=search],
 input[type=tel],
 input[type=color] {
   background: transparent;
+}
+
+.admin-customize {
+  .themes-list-header {
+    margin-top: 10px;
+
+    .components-tab .d-icon {
+      // not sure why only the components has an icon but it looks out of place
+      display: none;
+    }
+  }
+
+  .create-actions button {
+    width: 95%;
+    margin-left: 10px;
+  }
+
+  .themes-intro {
+    width: 56%;
+    margin-left: 5%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  .show-current-style {
+    width: 61%;
+    margin-top: 10px;
+  }
+}
+
+.chat-drawer .chat-drawer-container,
+.chat-drawer-header,
+.chat-composer__inner-container,
+.chat-emoji-picker,
+.chat-emoji-picker__section-title,
+.chat-emoji-picker__filter.dc-filter-input-container,
+.full-page-chat .chat-full-page-header,
+.chat-notices__notice,
+.chat-notices .chat-retention-reminder,
+.reviewable-filters,
+input[disabled],
+input[readonly],
+select[disabled],
+select[readonly],
+textarea[disabled],
+textarea[readonly],
+.search-menu .search-input,
+.search-menu-container .search-input {
+  backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
+  background: rgba(var(--secondary-rgb), .2)
+}
+
+.chat-composer__wrapper,
+.chat-composer-dropdown__trigger-btn .d-icon,
+.chat-message,
+.chat-message-container,
+.chat-transcript,
+.no-touch .chat-message-container:hover {
+  background: none;
+}
+
+.chat-emoji-picker__section-title {
+  backdrop-filter: blur(5rem);
+}
+
+.chat-emoji-picker__filter.dc-filter-input-container,
+.chat-emoji-picker__fitzpatrick-modifier-btn.current.t1,
+.chat-notices__notice,
+.chat-notices .chat-retention-reminder,
+.search-menu .search-input,
+.search-menu-container .search-input {
+  border-radius: 8px;
+}
+
+.chat-drawer.is-expanded .chat-drawer-container {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.chat-message-reaction,
+.chat-message-actions .more-buttons.dropdown-select-box .select-kit-header,
+.fk-d-button-tooltip .fk-d-tooltip__trigger {
+  border: none !important
+}
+
+.user-menu.revamped .tabs-list .btn.active {
+  background: var(--d-hover);
+  border-radius: 8px;
+}
+
+.silence-user-modal .penalty-history,
+.suspend-user-modal .penalty-history {
+  background: none;
+
+  ::before {
+    background: none;
+  }
+}
+
+.show-badge-details {
+  display: block;
+
+  .badge-card.large {
+    max-width: none;
+    width: 100%
+  }
+}
+
+.badge-grant-info {
+  margin-top: 10px;
+}
+
+.nav.nav-stacked {
+  margin-right: 5px;
+}
+
+.nav-stacked a.active {
+  color: inherit;
+  background-color: none;
+}
+
+.admin-api {
+  .admin-controls {
+    border-radius: 8px;
+  }
+
+  .admin-container .btn-primary {
+    margin-top: 10px;
+  }
+}
+
+.ai-persona-list-editor__header {
+  margin-top: 10px;
+}
+
+input[disabled],
+input[readonly],
+select[disabled],
+select[readonly],
+textarea[disabled],
+textarea[readonly] {
+  border-radius: 8px;
+}
+
+.admin-plugins-list__author svg {
+  display: none;
+}
+
+.archetype-private_message .topic-body .cooked {
+  background: none !important;
+}
+
+.no-content, .select-kit .select-kit-row.is-highlighted  {
+  background: none;
+}
+
+.fk-d-menu__inner-content {
+  background: none;
+  border: none;
+}
+
+.user-card, .group-card {
+  background: none;
 }
