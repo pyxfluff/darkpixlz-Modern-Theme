@@ -52,7 +52,7 @@ Header_Direction:
    description: "Direction the header is in, in degrees. ONLY Type [number]deg, anything else will break it! WARNING: Header gradient is ignored if Blur Header Background is enabled."
 
 Full_Width:
-   default: false
+   default: true
    type: bool
    description: "Adds full width to the theme."
 
