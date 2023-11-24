@@ -12,5 +12,6 @@ I will likely not be adding any new feautres to this nor fixing existing issues 
 PRs are still welcome and will be reviewed.
 
 ## [Last Patch: 7/23/23 (3.1.0.beta6)]()
+=======
 
 Newer versions could be broken. Wait for a patch if there is a breaking change!
