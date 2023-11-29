@@ -2294,3 +2294,7 @@ textarea[readonly] {
 .user-card, .group-card {
   background: none;
 }
+
+.user-content-wrapper .user-content, .user-main .about.has-background .details:not(.collapsed-info) {
+  height: fit-content
+}
