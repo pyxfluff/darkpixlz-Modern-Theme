@@ -26,7 +26,7 @@ Tile_Size:
    description: "Size for the tile background type. Will only work if Background Type is set to tile. WARNING: You must include 'px' at the end of it, or it wont work!"
    type: string
    
-Staff_tag:
+Post_Tags:
    default: true
    description: "Enables Staff tag next to admins and moderators."
    type: bool

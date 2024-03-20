@@ -295,11 +295,9 @@ pre code {
   }
 }
 
-/* User cards + header that look good */
+// User cards + header that look good 
 .d-header {
-  //  background: #000fff00;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0) !important;
-  // backdrop-filter: blur(1rem);
   top: 4px;
 }
 
@@ -308,11 +306,11 @@ pre code {
 }
 
 .extra-info-wrapper .topic-header-extra .discourse-tags .discourse-tag {
-  border-radius: 8px 8px 8px 8px;
+  border-radius: 8px;
   background-color: #0f0f0f !important;
 }
 
-/* Fix the glitchy af badges */
+// Fix the glitchy af badges 
 .user-card .badge-section {
   border-radius: 8px;
 
@@ -352,13 +350,11 @@ pre code {
 }
 
 .unread-high-priority-notifications.badge-notification[href] {
-  //legacy
   background-color: #67ffb2;
 }
 
 .user-card {
   .badge-section {
-
     .user-badge,
     .more-user-badges a {
       border-radius: 16px;
@@ -372,6 +368,7 @@ pre code {
   padding: 0.15em 0.25em 0.15em 0.35em;
   background-color: var(--primary-low);
   color: var(--primary) !important;
+  margin-left: 2px;
 
   &:hover {
     background-color: var(--primary-low-mid);
@@ -1371,11 +1368,22 @@ nav.post-controls .actions .double-button button.button-count:not(.my-likes) {
   border-radius: 18px;
 }
 
-@if $Staff_tag =="true" {
+@if $Post_Tags =="true" {
   span.staff :after {
     content: "Staff";
     color: white;
-    background-color: #00a9db;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    margin-left: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    display: inline-block;
+  }
+
+  span.topic-owner :after {
+    content: "OP";
+    color: white;
+    background-color: #1a1a1a;
     border-radius: 8px;
     margin-left: 5px;
     padding-left: 4px;
@@ -1420,7 +1428,7 @@ nav.post-controls .actions .double-button button.button-count:not(.my-likes) {
 .broken-theme-alert {
   background: #5563ff !important;
   border-radius: 8px !important;
-  width: 100%;
+  width: 100% !important;
   text-align: center;
 }
 
@@ -1495,10 +1503,6 @@ div.edit-category {
   .warning {
     border-radius: 8px;
   }
-}
-
-.select-kit.is-expanded .select-kit-body {
-  border-radius: 16px;
 }
 
 .welcome-cta {
@@ -1650,6 +1654,8 @@ div.login-required {
   background: #0a0a0a8f;
   backdrop-filter: blur(2rem);
   -webkit-backdrop-filter: blur(2rem);
+  border-radius: 16px;
+  position: absolute !important;
 }
 
 .select-kit.single-select.dropdown-select-box.is-expanded .select-kit-collection,
@@ -1663,11 +1669,6 @@ div.login-required {
 .group-card .card-content {
   left: 0px !important;
 }
-
-.select-kit.is-expanded .select-kit-body {
-  position: absolute !important;
-}
-
 .user-content {
   background: transparent !important;
 }
@@ -1794,7 +1795,7 @@ aside.quote .title {
 }
 
 .user-content-wrapper .user-content,
-.user-main .about.has-background .details:not(.collapsed-info) {
+.user-main .about.has-background {
   border-radius: 0px 0px 18px 18px;
   padding: 15px;
   background-image: var(--profile-bg-img);
@@ -1804,10 +1805,10 @@ aside.quote .title {
 .user-main {
   .about.has-background .user-profile-image {
     border-radius: 18px 18px 0px 0px;
+    background: none !important;
   }
 
   .about {
-
     .details .primary:not(.collapsed-info),
     .user-main .about .secondary {
       z-index: 50;
@@ -2296,5 +2297,36 @@ textarea[readonly] {
 }
 
 .user-content-wrapper .user-content, .user-main .about.has-background .details:not(.collapsed-info) {
-  height: fit-content
+  height: fit-content;
+  margin-bottom: 25px;
+}
+
+.topic-list .topic-list-item-separator .topic-list-data span {
+  border-radius: 8px;
+}
+
+.flag-modal {
+  backdrop-filter: blur(.5rem);
+
+  .textarea {
+    background: #27283361;
+    border-radius: 8px;
+  }
+}
+
+.btn-primary {
+  background-color: white;
+  color: black;
+
+  &:hover {
+    background-color: rgb(207, 207, 207);
+  }
+}
+
+.directory-table .me .directory-table__cell, .directory-table .me .directory-table__cell--user-field {
+  background: none
+}
+
+.user-card .btn {
+  width: 100%
 }
