@@ -1380,7 +1380,7 @@ nav.post-controls .actions .double-button button.button-count:not(.my-likes) {
     display: inline-block;
   }
 
-  span.topic-owner :after {
+  .topic-owner topic-meta-data div.names span:after {
     content: "OP";
     color: white;
     background-color: #1a1a1a;

@@ -28,7 +28,7 @@ Tile_Size:
    
 Post_Tags:
    default: true
-   description: "Enables Staff tag next to admins and moderators."
+   description: "Enables Staff tag next to admins and moderators, and \"OP\" next to the topic owner."
    type: bool
 
 Header_Color_1:
