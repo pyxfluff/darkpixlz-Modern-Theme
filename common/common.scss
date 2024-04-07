@@ -2,12 +2,28 @@
 
 @import url("https://fonts.googleapis.com/css?family=Nunito");
 
+// Mixins
+
+@mixin Semitransparent-Box() {
+  border-radius: 12px;
+  background: rgba(var(--secondary-rgb), .4);
+  border: rgba(var(--secondary-rgb), .4)
+}
+
+@mixin BorderByOption($style) { // todo
+  @if $style == "more" {
+    border-radius: 18px;
+  } @else {
+    border-radius: 8px;
+  }
+}
+
 :root {
   --d-hover: rgba(var(--primary-very-low-rgb), .3) !important
 }
 
 body {
-  @if $Background_Type =="tile" {
+  @if $Background_Type == "tile" {
     background-image: linear-gradient(0deg,
         rgba(var(--secondary-rgb), 1) 0%,
         rgba(var(--secondary-rgb), 0.75) 100%),
@@ -145,12 +161,13 @@ label {
 }
 
 .cooked img:not(.thumbnail):not(.emoji),
-.d-editor-preview img:not(.thumbnail):not(.emoji) {
-  border-radius: 8px;
+.d-editor-preview img:not(.thumbnail):not(.emoji),
+.mfp-img {
+  @include BorderByOption("less")
 }
 
 aside.quote .title {
-  border-radius: 8px;
+  @include BorderByOption("less")
 }
 
 // Make Like button white
@@ -239,11 +256,11 @@ div.boxed,
 
 .permalink-form {
   background: #1414156e;
-  border-radius: 8px;
+  @include BorderByOption("less")
 }
 
 pre code {
-  border-radius: 8px;
+  @include BorderByOption("less")
 }
 
 .d-header {
@@ -272,7 +289,7 @@ pre code {
 }
 
 .composer-popup.education-message {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .topic-list {
@@ -306,13 +323,13 @@ pre code {
 }
 
 .extra-info-wrapper .topic-header-extra .discourse-tags .discourse-tag {
-  border-radius: 8px;
+  @include BorderByOption("less");
   background-color: #0f0f0f !important;
 }
 
 // Fix the glitchy af badges 
 .user-card .badge-section {
-  border-radius: 8px;
+  @include BorderByOption("less");
 
   .user-card-badge-link,
   .more-user-badges {
@@ -413,7 +430,7 @@ input[type],
 .select-kit.combo-box .select-kit-header,
 .d-editor-textarea-wrapper,
 div.ac-wrap {
-  border-radius: 8px !important;
+  @include BorderByOption("less");
 }
 
 .badge-card,
@@ -487,7 +504,7 @@ div.ac-wrap {
 }
 
 .chat-messages-container .chat-message.chat-message-bookmarked {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .topic-chat-drawer-header {
@@ -498,7 +515,7 @@ div.ac-wrap {
 [data-tippy-root],
 .tippy-box {
   background-color: rgba(36, 36, 36, 0.07);
-  border-radius: 8px;
+  @include BorderByOption("less");
   backdrop-filter: blur(10rem);
   -webkit-backdrop-filter: blur(10rem);
 }
@@ -534,14 +551,14 @@ div.ac-wrap {
 }
 
 .btn:hover:not(.btn-disabled) {
-  border-radius: 8px !important;
+  @include BorderByOption("less");
 }
 
 .user,
 .notification,
 .user-menu.revamped #quick-access-profile li>* {
   :hover {
-    border-radius: 8px !important;
+    @include BorderByOption("less");
   }
 }
 
@@ -844,7 +861,7 @@ svg.PixlzThemeSearchIcon {
 
 .ip-lookup .location-box {
   background-color: rgba(36, 36, 36, 0.07);
-  border-radius: 8px;
+  @include BorderByOption("less");
   backdrop-filter: blur(2rem);
   -webkit-backdrop-filter: blur(2rem);
 }
@@ -874,13 +891,13 @@ svg.PixlzThemeSearchIcon {
 .modal-middle-container,
 .dialog-overlay {
   background-color: #0000;
-  border-radius: 8px;
+  @include BorderByOption("less");
   backdrop-filter: blur(2rem);
   -webkit-backdrop-filter: blur(2rem);
 }
 
 .dialog-content {
-  border-radius: 18px;
+  @include BorderByOption("more");
 }
 
 .published-page {
@@ -907,7 +924,7 @@ svg.PixlzThemeSearchIcon {
 }
 
 .group-details-container {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .quote-button {
@@ -1006,11 +1023,11 @@ svg.PixlzThemeSearchIcon {
 }
 
 .fullscreen-table-modal .modal-inner-container {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .hljs {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .search-container {
@@ -1098,16 +1115,16 @@ body:not(.ios-safari-composer-hacks) #reply-control.open,
 
 #reply-control .mini-tag-chooser .select-kit-header {
   background: transparent;
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .popup-menu {
-  border-radius: 18px;
+  @include BorderByOption("more");
 }
 
 .discourse-reactions-state-panel .container,
 .discourse-reactions-picker .discourse-reactions-picker-container {
-  border-radius: 8px;
+  @include BorderByOption("less");
   background: rgba(0, 15, 255, 0);
   backdrop-filter: blur(2rem);
   -webkit-backdrop-filter: blur(2rem);
@@ -1118,12 +1135,12 @@ body:not(.ios-safari-composer-hacks) #reply-control.open,
 }
 
 nav.post-controls .actions button {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .user-menu .quick-access-panel {
   ul {
-    border-radius: 8px;
+    @include BorderByOption("less");
     opacity: 0.7;
 
     li a {
@@ -1141,7 +1158,7 @@ nav.post-controls .actions button {
 }
 
 img.avatar {
-  border-radius: 18px !important;
+  @include BorderByOption("more");
 }
 
 .search-advanced-additional-options {
@@ -1165,11 +1182,11 @@ div.poll .results {
 
   .chosen .bar,
   .bar-back {
-    border-radius: 8px;
+    @include BorderByOption("less");
   }
 
   .bar {
-    border-radius: 8px;
+    @include BorderByOption("less");
   }
 }
 
@@ -1184,7 +1201,7 @@ div.poll .results {
 #reply-control .save-or-cancel .cancel,
 .wizard-container__button.finish {
   background: #2c2c2c;
-  border-radius: 8px;
+  @include BorderByOption("less");
   width: 70px;
   height: 30px;
   text-align: center !important;
@@ -1199,11 +1216,12 @@ div.poll .results {
 div#banner,
 div.global-notice,
 .alert.alert-info {
+  margin-top: 10px;
   border-radius: 12px;
 }
 
 blockquote {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .admin-detail,
@@ -1211,14 +1229,14 @@ blockquote {
 .nav-stacked li,
 .admin-nav {
   background: transparent;
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 // Remove button hover effect
 
 .btn {
   :hover {
-    border-radius: 8px !important;
+    @include BorderByOption("less")
   }
 
   &:active,
@@ -1305,29 +1323,31 @@ blockquote {
 
 .menu-panel .widget-link,
 .menu-panel .categories-link {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
-.nav-stacked a.active,
 iframe {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .nav-stacked {
   background: rgba(var(--primary-low-rgb), .4);
   border-radius: 8px 8px 0px 0px;
   backdrop-filter: blur(2rem);
+
+  a.active, li {
+    border-radius: 0px;
+  }
 }
 
 .admin-detail,
 .admin-controls .controls,
-.nav-stacked li,
 .admin-nav {
   border-radius: 0px;
 }
 
 .modal-inner-container {
-  border-radius: 18px;
+  @include BorderByOption("more");
 }
 
 nav.post-controls .actions,
@@ -1335,11 +1355,11 @@ nav.post-controls .actions,
 .d-header-icons .icon,
 .topic-list-item,
 tr {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .discourse-kanban-container .discourse-kanban-list {
-  border-radius: 18px;
+  @include BorderByOption("more");
   background-color: var(--primary-very-low);
 }
 
@@ -1365,7 +1385,7 @@ nav.post-controls .actions .double-button button.button-count:not(.my-likes) {
 }
 
 .fixed-modal:not(.history-modal) .modal-body:not(.reorder-categories):not(.poll-ui-builder):not(.poll-breakdown) {
-  border-radius: 18px;
+  @include BorderByOption("more");
 }
 
 @if $Post_Tags =="true" {
@@ -1373,7 +1393,7 @@ nav.post-controls .actions .double-button button.button-count:not(.my-likes) {
     content: "Staff";
     color: white;
     background-color: #1a1a1a;
-    border-radius: 8px;
+    @include BorderByOption("less");
     margin-left: 5px;
     padding-left: 4px;
     padding-right: 4px;
@@ -1384,7 +1404,7 @@ nav.post-controls .actions .double-button button.button-count:not(.my-likes) {
     content: "OP";
     color: white;
     background-color: #1a1a1a;
-    border-radius: 8px;
+    @include BorderByOption("less");
     margin-left: 5px;
     padding: 5px;
     font-size: 12px;
@@ -1426,8 +1446,9 @@ nav.post-controls .actions .double-button button.button-count:not(.my-likes) {
 .alert.alert-error,
 .alert.alert-success,
 .broken-theme-alert {
+  @include BorderByOption("less");
+
   background: #5563ff !important;
-  border-radius: 8px !important;
   width: 100% !important;
   text-align: center;
 }
@@ -1456,7 +1477,7 @@ nav.post-controls .actions .double-button button.button-count:not(.my-likes) {
 .fk-d-menu__inner-content {
   border: 1px solid var(--primary-low);
   margin-bottom: 1em;
-  border-radius: 18px;
+  @include BorderByOption("more");
   background-color: rgba(var(--secondary), 0.2);
 }
 
@@ -1470,8 +1491,8 @@ nav.post-controls .actions .double-button button.button-count:not(.my-likes) {
 
 // User Menu
 .user-menu .quick-access-panel li:not(.show-all) {
+  @include BorderByOption("less");
   margin-bottom: 0.2em;
-  border-radius: 8px;
 }
 
 .drop-down-mode .d-header-icons .active .icon:after {
@@ -1497,11 +1518,11 @@ th.views.sortable.num.topic-list-data {
 
 div.edit-category {
   .edit-category-title-bar {
-    border-radius: 8px;
+    @include BorderByOption("less");
   }
 
   .warning {
-    border-radius: 8px;
+    @include BorderByOption("less");
   }
 }
 
@@ -1512,7 +1533,7 @@ div.edit-category {
 }
 
 .composer-popup {
-  border-radius: 8px;
+  @include BorderByOption("less");
   backdrop-filter: blur(1rem);
   background-color: rgba(var(--primary-low-rgb), 0.4);
 }
@@ -1520,17 +1541,17 @@ div.edit-category {
 .user-preferences .bio-composer .d-editor-preview,
 .group-form-bio .d-editor-preview,
 .edit-category-tab-topic-template .d-editor-preview {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .select-kit .select-kit-header:not(.btn),
 .select-kit.multi-select {
   background: transparent;
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .wizard-container__button {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .fa.d-icon.d-icon-chevron-left.svg-icon.svg-string::after {
@@ -1538,7 +1559,7 @@ div.edit-category {
 }
 
 .wizard-container .wizard-container__image-upload canvas {
-  border-radius: 18px;
+  @include BorderByOption("more");
 }
 
 .floating-search-input .search-banner-inner.wrap .search-menu .search-input #search-term {
@@ -1552,7 +1573,7 @@ div.edit-category {
 }
 
 .discourse-no-touch .groups-boxes .group-box {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .groups-boxes {
@@ -1573,26 +1594,26 @@ div.edit-category {
 }
 
 .show-more {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .floating-search-input .search-banner-inner.wrap .search-menu .results ul.list li,
 .floating-search-input .search-banner-inner.wrap .search-menu .results ul li,
 .search-menu .search-result-topic .search-link,
 .search-menu .search-result-post .search-link {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .floating-search-input .search-banner-inner.wrap .search-menu .results {
   background-color: rgba(36, 36, 36, 0.21);
   backdrop-filter: blur(2rem);
   -webkit-backdrop-filter: blur(2rem);
-  border-radius: 18px;
+  @include BorderByOption("more");
 }
 
 .deleted .regular>.cooked,
 .regular>.cooked {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .user-card-avatar .avatar-flair.rounded,
@@ -1632,7 +1653,7 @@ div.login-required {
 }
 
 .chat-message-collapser .chat-video-upload {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .container.posts .topic-navigation-popup {
@@ -1645,7 +1666,7 @@ div.login-required {
 
 .user-card-directory .user-card-directory-footer {
   background: #0a0a0a6e;
-  border-radius: 8px;
+  @include BorderByOption("less");
   margin-top: 5px;
 }
 
@@ -1660,7 +1681,7 @@ div.login-required {
 
 .select-kit.single-select.dropdown-select-box.is-expanded .select-kit-collection,
 .select-kit.single-select.dropdown-select-box.is-expanded .select-kit-body {
-  border-radius: 18px;
+  @include BorderByOption("more");
 }
 
 .user-card.show,
@@ -1684,7 +1705,7 @@ div.login-required {
 
 .static-progress-bar .progress-bar-background,
 .static-progress-bar .progress-bar-background .progress-bar {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .discourse-no-touch .sortable:hover,
@@ -1745,7 +1766,7 @@ div.login-required {
 .d-user-card__field,
 .user-card-metadata-outlet {
   background-color: rgba(var(--primary-low-rgb), 0.5);
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .d-user-card__field,
@@ -1791,7 +1812,7 @@ aside.quote .title {
 }
 
 .d-user-card__main-content {
-  border-radius: 18px;
+  @include BorderByOption("more");
 }
 
 .user-content-wrapper .user-content,
@@ -1813,7 +1834,7 @@ aside.quote .title {
     .user-main .about .secondary {
       z-index: 50;
       backdrop-filter: blur(2rem);
-      border-radius: 8px;
+      @include BorderByOption("less");
       padding: 5px;
     }
 
@@ -1825,7 +1846,7 @@ aside.quote .title {
 }
 
 .user-main .about.collapsed-info .details {
-  border-radius: 18px !important;
+  border-radius: 18px;
   border-bottom: none;
 }
 
@@ -1847,7 +1868,7 @@ aside.quote .title {
 }
 
 .d-header #site-logo {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .widget-button.btn-flat.toggle-like.has-like.fade-out.no-text.btn-icon {
@@ -1855,14 +1876,14 @@ aside.quote .title {
 }
 
 section.tag-info {
-  border-radius: 18px;
+  @include BorderByOption("more");
   background-color: rgba(var(--secondary-rgb), 0.4);
 }
 
 .profiler-results .profiler-popup {
   background-color: rgba(var(--secondary-rgb), 0.6);
   backdrop-filter: blur(2rem);
-  border-radius: 18px;
+  @include BorderByOption("more");
   border: 1px solid #262626;
   color: #d5d5d5;
 }
@@ -1887,7 +1908,7 @@ div.profiler-results.profiler-top .profiler-button {
 }
 
 .docker-manager .progress-bar {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .docker-manager .progress-bar-inner {
@@ -1895,7 +1916,7 @@ div.profiler-results.profiler-top .profiler-button {
 }
 
 .docker-manager .console-logs {
-  border-radius: 18px;
+  @include BorderByOption("more");
 }
 
 .nav-pills>li a.active,
@@ -1928,7 +1949,7 @@ div.profiler-results.profiler-top .profiler-button {
 }
 
 .ace.ace_editor.ace-chaos.ace_dark {
-  border-radius: 8px;
+  @include BorderByOption("less");
   margin-top: 10px;
 }
 
@@ -1940,13 +1961,13 @@ div.profiler-results.profiler-top .profiler-button {
     margin: auto;
     width: 95%;
     margin-bottom: 15px;
-    border-radius: 8px;
+    @include BorderByOption("less");
     margin-top: 5px;
-    border-radius: 18px;
+    @include BorderByOption("more");
   }
 
   .d-header {
-    border-radius: 18px;
+    @include BorderByOption("more");
   }
 }
 
@@ -1962,7 +1983,7 @@ div.profiler-results.profiler-top .profiler-button {
 .user-main .about .secondary {
   backdrop-filter: blur(2rem);
   padding: 3px;
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .alert.alert-error.report-alert.rate-limited {
@@ -1976,7 +1997,7 @@ div.profiler-results.profiler-top .profiler-button {
 // Make styleguide more accurate to the final theme
 .styleguide pre,
 .styleguide--char-counter {
-  border-radius: 18px;
+  @include BorderByOption("more");
 }
 
 .create-invite-modal.modal .modal-body,
@@ -1987,7 +2008,7 @@ div.profiler-results.profiler-top .profiler-button {
 
 .topic-body.clearfix {
   background-color: transparent !important;
-  border-radius: 18px;
+  @include BorderByOption("more");
 }
 
 .topic-avatar {
@@ -1996,7 +2017,7 @@ div.profiler-results.profiler-top .profiler-button {
 
 /*
 .topic-post article.boxed {
-  border-radius: 18px;
+  @include BorderByOption("more");
   border: 3px solid var(--d-hover);
   padding: 5px;
 }
@@ -2029,19 +2050,16 @@ aside.onebox .onebox-body h4 {
 }
 
 .selected-posts {
-  border-radius: 18px;
+  @include BorderByOption("more");
   background-color: rgba(var(--primary-very-low-rgb), .8);
   border: var(--primary-very-low)
 }
 
 // Fixes onebox styling change made at some point
 
-.onebox.whitelistedgeneric,
-.badge-card,
-aside.onebox {
-  border-radius: 12px;
-  background: rgba(var(--secondary-rgb), .4);
-  border: rgba(var(--secondary-rgb), .4)
+.onebox.whitelistedgeneric, .badge-card, aside.onebox,
+.admin-new-feature-item {
+  @include Semitransparent-Box()
 }
 
 // fixes sidebar
@@ -2069,7 +2087,7 @@ aside.onebox {
 }
 
 .uploaded-image-preview.input-xxlarge {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .sidebar-section-link-wrapper .sidebar-section-link {
@@ -2078,11 +2096,11 @@ aside.onebox {
 
 .archetype-private_message .map:first-of-type .buttons .btn,
 .alert {
-  border-radius: 18px;
+  @include BorderByOption("more");
 }
 
 .sidebar-more-section-links-details-content {
-  border-radius: 8px;
+  @include BorderByOption("less");
   background: rgba(var(--secondary-rgb), .4);
   backdrop-filter: blur(2rem)
 }
@@ -2097,12 +2115,12 @@ aside.onebox {
 .d-modal__container {
   background: rgba(var(--secondary-rgb), 0);
   backdrop-filter: blur(2rem);
-  border-radius: 18px;
+  @include BorderByOption("more");
   min-width: 600px;
 
   .alert {
     background-color: var(--danger-low-mid);
-    border-radius: 8px;
+    @include BorderByOption("less");
   }
 }
 
@@ -2116,20 +2134,7 @@ del {
   border-radius: 0px !important;
 }
 
-input[type=text],
-input[type=password],
-input[type=datetime],
-input[type=datetime-local],
-input[type=date],
-input[type=month],
-input[type=time],
-input[type=week],
-input[type=number],
-input[type=email],
-input[type=url],
-input[type=search],
-input[type=tel],
-input[type=color] {
+input {
   background: transparent;
 }
 
@@ -2203,7 +2208,7 @@ textarea[readonly],
 .chat-notices .chat-retention-reminder,
 .search-menu .search-input,
 .search-menu-container .search-input {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .chat-drawer.is-expanded .chat-drawer-container {
@@ -2218,7 +2223,7 @@ textarea[readonly],
 
 .user-menu.revamped .tabs-list .btn.active {
   background: var(--d-hover);
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .silence-user-modal .penalty-history,
@@ -2254,7 +2259,7 @@ textarea[readonly],
 
 .admin-api {
   .admin-controls {
-    border-radius: 8px;
+    @include BorderByOption("less");
   }
 
   .admin-container .btn-primary {
@@ -2272,7 +2277,7 @@ select[disabled],
 select[readonly],
 textarea[disabled],
 textarea[readonly] {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .admin-plugins-list__author svg {
@@ -2302,15 +2307,15 @@ textarea[readonly] {
 }
 
 .topic-list .topic-list-item-separator .topic-list-data span {
-  border-radius: 8px;
+  @include BorderByOption("less");
 }
 
 .flag-modal {
   backdrop-filter: blur(.5rem);
 
   .textarea {
+    @include BorderByOption("less");
     background: #27283361;
-    border-radius: 8px;
   }
 }
 
@@ -2329,4 +2334,26 @@ textarea[readonly] {
 
 .user-card .btn {
   width: 100%
+}
+
+.meta {
+  border-radius: 0px 0px 8px 8px;
+  background-color: rgba(var(--secondary-rgb), .4);
+  backdrop-filter: blur(1rem);
+  color: white;
+}
+
+.admin-reports-list__report {
+  @include Semitransparent-Box()
+}
+
+.admin-customize .admin-container {
+  @include BorderByOption("more")
+}
+
+.reviewable-item, .modal.revise-and-reject-reviewable .revise-and-reject-reviewable__queued-post,
+.reviewable-item .reviewable-contents, .modal.revise-and-reject-reviewable .revise-and-reject-reviewable__queued-post .reviewable-contents,
+.poll {
+  @include BorderByOption("more");
+  @include Semitransparent-Box()
 }
