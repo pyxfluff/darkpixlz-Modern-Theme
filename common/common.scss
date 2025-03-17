@@ -2366,6 +2366,6 @@ textarea[readonly] {
     @include Semitransparent-Box()
 }
 
-.regular .contents {
+.regular.contents {
     @include BorderByOption("more")
 }
