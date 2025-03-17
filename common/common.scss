@@ -1792,7 +1792,10 @@ aside.quote .title {
 .btn:not(.themes-tab):not(.components-tab),
 .select-kit.dropdown-select-box .dropdown-select-box-header {
     border: none;
-    background-color: rgba(10, 10, 10, .65);
+
+    &:not(.no-text) {
+        background-color: rgba(10, 10, 10, .65);
+    }
 }
 
 // Remove image rounding
