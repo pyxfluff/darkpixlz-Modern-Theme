@@ -49,7 +49,7 @@ body {
     @if $Is_Background_Blurred =="true" {
         backdrop-filter: blur(3rem) !important;
         -webkit-backdrop-filter: blur(3rem);
-        background-color: #0a0a0aa6 !important;
+        background-color: rgb(10 10 10 / 17%) !important;
 
         input[type],
         .select-kit.combo-box .select-kit-header,
