@@ -1151,16 +1151,13 @@ img.avatar {
 .topic-map {
     background-color: rgba(6, 6, 6, 0);
 
-    &:nth-child(1) {
+    .topic-map__contents {
+        background-color: rgba(10, 10, 10, .65) !important;
         border-radius: 18px 18px 0px 0px;
     }
 
-    &:nth-child(2) {
+    .topic-map__private-message-map {
         border-radius: 0px 0px 18px 18px;
-    }
-
-    .topic-map__contents {
-        background-color: rgba(10, 10, 10, .65) !important;
     }
 
     .user {
