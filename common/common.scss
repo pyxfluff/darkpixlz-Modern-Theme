@@ -1157,13 +1157,15 @@ img.avatar {
     }
 
     .topic-map__private-message-map {
+        background-color: rgba(10, 10, 10, .65) !important;
         border-radius: 0px 0px 18px 18px;
+
+        .participants .user {
+            background-color: rgba(10, 10, 10, .65);
+            border-radius: 8px;
+        }
     }
 
-    .user {
-        background-color: rgba(10, 10, 10, .65);
-        border-radius: 8px;
-    }
 }
 
 
