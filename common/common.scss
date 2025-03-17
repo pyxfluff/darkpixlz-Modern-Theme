@@ -12,7 +12,7 @@
 @mixin BorderByOption($style) {
 
     // todo
-    @if $style == "more" {
+    @if $style =="more" {
         border-radius: 18px;
     }
 
@@ -42,42 +42,36 @@ body {
     font-family: "Nunito" !important;
 }
 
-legend {
-    font-family: "Nunito" !important;
-}
 
-div#main-outlet.wrap.not-found-container,
-#main-outlet-wrapper {
+#main-outlet,
+.sidebar-wrapper,
+.admin-area .sidebar-wrapper .admin-panel {
+    @if $Is_Background_Blurred =="true" {
+        backdrop-filter: blur(3rem) !important;
+        -webkit-backdrop-filter: blur(3rem);
+        background-color: #0a0a0aa6 !important;
 
-    #main-outlet,
-    .sidebar-wrapper,
-    .admin-area .sidebar-wrapper .admin-panel {
-        @if $Is_Background_Blurred =="true" {
-            backdrop-filter: blur(3rem) !important;
-            -webkit-backdrop-filter: blur(3rem);
-            background-color: #0a0a0aa6 !important;
-
-            input[type],
-            .select-kit.combo-box .select-kit-header,
-            .d-editor-textarea-wrapper,
-            div.ac-wrap {
-                background: transparent;
-            }
+        input[type],
+        .select-kit.combo-box .select-kit-header,
+        .d-editor-textarea-wrapper,
+        div.ac-wrap {
+            background: transparent;
         }
+    }
 
-        @else {
-            backdrop-filter: none !important;
-            background-color: var(--secondary) !important;
+    @else {
+        backdrop-filter: none !important;
+        background-color: var(--secondary) !important;
 
-            input[type],
-            .select-kit.combo-box .select-kit-header,
-            .d-editor-textarea-wrapper,
-            div.ac-wrap {
-                background: transparent;
-            }
+        input[type],
+        .select-kit.combo-box .select-kit-header,
+        .d-editor-textarea-wrapper,
+        div.ac-wrap {
+            background: transparent;
         }
     }
 }
+
 
 #main-outlet {
     @if $Is_Background_Blurred =="true" {
@@ -138,7 +132,7 @@ body.wizard {
 * {
     font-family: "Nunito" !important;
 
-    @if $Is_Cursor_Active == "false" {
+    @if $Is_Cursor_Active =="false" {
         cursor: default !important;
     }
 }
