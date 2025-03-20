@@ -1,3 +1,6 @@
+# Code Archive
+## Please use [pyxfluff/moderntheme](https://github.com/pyxfluff/moderntheme) instead.
+
 # darkpixlz's Modern Theme
 ---
 
